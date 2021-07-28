@@ -316,10 +316,10 @@
             </objects>
             <point key="canvasLocation" x="155" y="-653"/>
         </scene>
-        <!--SignUpViewController-->
+        <!--SignUp-->
         <scene sceneID="Zmp-vt-dl8">
             <objects>
-                <viewControllerPlaceholder storyboardName="SignUp" referencedIdentifier="SignUpViewController" id="bid-HT-lfP" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="SignUp" id="bid-HT-lfP" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="Xye-qQ-ORR"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jib-6h-cIa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
