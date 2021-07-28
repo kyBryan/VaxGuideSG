@@ -131,6 +131,9 @@
                                         <rect key="frame" x="54" y="66" width="312" height="77"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Start Your Vaccination Tour Guide"/>
+                                        <connections>
+                                            <segue destination="Ms5-5L-blu" kind="show" id="Qqj-pR-VLc"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -172,6 +175,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1186.9565217391305" y="72.991071428571431"/>
+        </scene>
+        <!--VacTourGuideVC-->
+        <scene sceneID="wL5-IK-kgS">
+            <objects>
+                <viewControllerPlaceholder storyboardName="VacTourGuide" referencedIdentifier="VacTourGuideVC" id="Ms5-5L-blu" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="krF-Ox-b4w"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3KW-8H-DqL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2072" y="22"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="A41-hY-FJH">
