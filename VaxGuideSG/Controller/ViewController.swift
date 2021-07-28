@@ -22,8 +22,8 @@ class ViewController: UIViewController {
 
     @IBAction func menuTapped(_ sender: Any) {
         if !menuFlag{
-            leading.constant = 280
-            trailing.constant = -280
+            leading.constant = 250
+            trailing.constant = -250
             
             // set flag to true, menu appeared
             menuFlag = true
