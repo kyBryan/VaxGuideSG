@@ -19,6 +19,9 @@
 		8A502EA326B1124400BF437A /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A502EA226B1124400BF437A /* Strings.swift */; };
 		8A502EA526B1499800BF437A /* VacTourGuide.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A502EA426B1499800BF437A /* VacTourGuide.storyboard */; };
 		8A502EA726B149ED00BF437A /* VacTourGuideVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A502EA626B149ED00BF437A /* VacTourGuideVC.swift */; };
+		8AA2413C26B15B310017A7B7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA2413B26B15B310017A7B7 /* LoginViewController.swift */; };
+		8AA2413E26B15C390017A7B7 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AA2413D26B15C390017A7B7 /* SignUp.storyboard */; };
+		8AA2414026B15C490017A7B7 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA2413F26B15C490017A7B7 /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,9 @@
 		8A502EA226B1124400BF437A /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		8A502EA426B1499800BF437A /* VacTourGuide.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VacTourGuide.storyboard; sourceTree = "<group>"; };
 		8A502EA626B149ED00BF437A /* VacTourGuideVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacTourGuideVC.swift; sourceTree = "<group>"; };
+		8AA2413B26B15B310017A7B7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8AA2413D26B15C390017A7B7 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
+		8AA2413F26B15C490017A7B7 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		923E9B0B779835E4FB0C008D /* Pods_VaxGuideSG.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VaxGuideSG.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -108,6 +114,7 @@
 				8A383AA426B0FB9A009906C3 /* Main.storyboard */,
 				8A383AAC26B0FB9B009906C3 /* LaunchScreen.storyboard */,
 				8A502EA426B1499800BF437A /* VacTourGuide.storyboard */,
+				8AA2413D26B15C390017A7B7 /* SignUp.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -117,6 +124,8 @@
 			children = (
 				8A383AA226B0FB9A009906C3 /* ViewController.swift */,
 				8A502EA626B149ED00BF437A /* VacTourGuideVC.swift */,
+				8AA2413B26B15B310017A7B7 /* LoginViewController.swift */,
+				8AA2413F26B15C490017A7B7 /* SignUpViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -209,6 +218,7 @@
 				8A383AAE26B0FB9B009906C3 /* LaunchScreen.storyboard in Resources */,
 				8A383AAB26B0FB9B009906C3 /* Assets.xcassets in Resources */,
 				8A383AA626B0FB9A009906C3 /* Main.storyboard in Resources */,
+				8AA2413E26B15C390017A7B7 /* SignUp.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +275,9 @@
 				8A383AA326B0FB9A009906C3 /* ViewController.swift in Sources */,
 				8A383A9F26B0FB9A009906C3 /* AppDelegate.swift in Sources */,
 				8A383AA926B0FB9A009906C3 /* VaxGuideSG.xcdatamodeld in Sources */,
+				8AA2413C26B15B310017A7B7 /* LoginViewController.swift in Sources */,
 				8A502EA326B1124400BF437A /* Strings.swift in Sources */,
+				8AA2414026B15C490017A7B7 /* SignUpViewController.swift in Sources */,
 				8A502EA726B149ED00BF437A /* VacTourGuideVC.swift in Sources */,
 				8A383AA126B0FB9A009906C3 /* SceneDelegate.swift in Sources */,
 			);
