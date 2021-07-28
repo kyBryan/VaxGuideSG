@@ -8,14 +8,34 @@
 import UIKit
 
 class SignUpViewController: UIViewController {
-
+    
+    
+    @IBOutlet weak var fullNameLabel: UITextField!
+    @IBOutlet weak var emailLabel: UITextField!
+    @IBOutlet weak var identityCardNoLabel: UITextField!
+    @IBOutlet weak var passwordLabel: UITextField!
+    @IBOutlet weak var phoneNoLabel: UITextField!
+    
+    var coreDataModel = CoreDataModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func signUpBtn(_ sender: UIButton) {
+        
+        if fullNameLabel.text!.isEmpty || passwordLabel.text!.isEmpty || emailLabel.text!.isEmpty || identityCardNoLabel.text!.isEmpty || phoneNoLabel.text!.isEmpty {
+            
+        } else {
+            
+            coreDataModel.addNewUser(email: emailLabel.text!, fullname: fullNameLabel.text!, nric: identityCardNoLabel.text!, password: passwordLabel.text!, phone: phoneNoLabel.text!)
+    
+        }
+        
+    }
+    
     /*
     // MARK: - Navigation
 

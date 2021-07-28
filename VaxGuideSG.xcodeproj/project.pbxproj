@@ -21,6 +21,7 @@
 		8A502EA726B149ED00BF437A /* VacTourGuideVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A502EA626B149ED00BF437A /* VacTourGuideVC.swift */; };
 		8A502EAD26B19CD100BF437A /* URLService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A502EAC26B19CD100BF437A /* URLService.swift */; };
 		8A502EAF26B19D4800BF437A /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A502EAE26B19D4800BF437A /* Appointment.swift */; };
+		8A88545726B1C648008EC35A /* CoreDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A88545626B1C648008EC35A /* CoreDataModel.swift */; };
 		8AA2413C26B15B310017A7B7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA2413B26B15B310017A7B7 /* LoginViewController.swift */; };
 		8AA2413E26B15C390017A7B7 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AA2413D26B15C390017A7B7 /* SignUp.storyboard */; };
 		8AA2414026B15C490017A7B7 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA2413F26B15C490017A7B7 /* SignUpViewController.swift */; };
@@ -44,6 +45,7 @@
 		8A502EA626B149ED00BF437A /* VacTourGuideVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacTourGuideVC.swift; sourceTree = "<group>"; };
 		8A502EAC26B19CD100BF437A /* URLService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLService.swift; sourceTree = "<group>"; };
 		8A502EAE26B19D4800BF437A /* Appointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
+		8A88545626B1C648008EC35A /* CoreDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataModel.swift; sourceTree = "<group>"; };
 		8AA2413B26B15B310017A7B7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8AA2413D26B15C390017A7B7 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		8AA2413F26B15C490017A7B7 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				8A502EAE26B19D4800BF437A /* Appointment.swift */,
+				8A88545626B1C648008EC35A /* CoreDataModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 				8A383A9F26B0FB9A009906C3 /* AppDelegate.swift in Sources */,
 				8A502EAD26B19CD100BF437A /* URLService.swift in Sources */,
 				8A383AA926B0FB9A009906C3 /* VaxGuideSG.xcdatamodeld in Sources */,
+				8A88545726B1C648008EC35A /* CoreDataModel.swift in Sources */,
 				8AA2413C26B15B310017A7B7 /* LoginViewController.swift in Sources */,
 				8A502EA326B1124400BF437A /* Strings.swift in Sources */,
 				8AA2414026B15C490017A7B7 /* SignUpViewController.swift in Sources */,

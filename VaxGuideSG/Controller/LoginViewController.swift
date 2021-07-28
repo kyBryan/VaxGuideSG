@@ -6,18 +6,21 @@
 //
 
 import UIKit
+import CoreData
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController { 
     
     @IBOutlet weak var usernameLabel: UITextField!
     @IBOutlet weak var passwordLabel: UITextField!
     
-    let username = "S12345678G"
-    let password = "12345678"
+    //    let username = "S12345678G"
+    //    let password = "12345678"
+    
+    var coreDataModel = CoreDataModel()
+    var users = [Users]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("helo")
         // Do any additional setup after loading the view.
         
     }
@@ -36,34 +39,48 @@ class LoginViewController: UIViewController {
     
     @IBAction func loginButton(_ sender: UIButton) {
         
+        var msg = ""
+        var title = ""
+        
         if usernameLabel.text!.isEmpty || passwordLabel.text!.isEmpty {
             
-            let alert = UIAlertController(title: "Missing Inputs", message: "Either or both the inputs are incompleted. Please fill it up", preferredStyle: .alert)
-            
-            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-            
-            self.present(alert, animated: true)
+            title = "Missing Inputs"
+            msg = "Either or both the inputs are incompleted. Please fill it up"
             
         } else {
             
-            if usernameLabel.text! == username && passwordLabel.text! == password {
+            users = coreDataModel.fetchAllUsers()
+            
+            for i in 0..<users.count {
                 
-                print("correct")
+                // debugging purposes
+                print(users[i].nric!)
+                print(users[i].password!)
                 
-            } else {
-                
-                let alert = UIAlertController(title: "Incorrect Username or Password", message: "Please key in the correct inputs.", preferredStyle: .alert)
-                
-                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-                
-                self.present(alert, animated: true)
-                
+                if usernameLabel.text! != users[i].nric! && passwordLabel.text! != users[i].password! {
+                    title = "No existing account"
+                    msg = "There is no such account in our system. Sign up to continue."
+                    
+                } else if usernameLabel.text! != users[i].nric || passwordLabel.text! != users[i].password {
+                    title = "Incorrect username or password"
+                    msg = "Either or both the inputs is incorrect. Please retry."
+                    
+                } else {
+                    
+                }
                 
             }
-            
-            
         }
+        
+        let alert = UIAlertController(title: title, message: msg, preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        
+        self.present(alert, animated: true)
         
     }
     
+    @IBAction func unwindToHome(for unwindSegue: UIStoryboardSegue) {
+        dismiss(animated: true, completion: nil)
+    }
 }

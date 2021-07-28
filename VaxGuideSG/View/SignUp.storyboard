@@ -23,6 +23,9 @@
                                 <state key="normal" title="SIGN UP">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="signUpBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="sw5-3n-0zh"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appLogo" translatesAutoresizingMaskIntoConstraints="NO" id="0hp-Hr-Kxy">
                                 <rect key="frame" x="142" y="76" width="130" height="130"/>
@@ -41,6 +44,9 @@
                                 <state key="normal" title="Sign in.">
                                     <color key="titleColor" red="0.18047619479999999" green="0.21829202410000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="23I-7T-PZt" kind="unwind" unwindAction="unwindToHomeFor:" id="b21-Ad-NJo"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="full name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QXO-Il-pI6">
                                 <rect key="frame" x="20" y="266" width="374" height="34"/>
@@ -71,8 +77,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R5G-31-bdu">
-                                <rect key="frame" x="20" y="517" width="374" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R5G-31-bdu">
+                                <rect key="frame" x="21" y="517" width="374" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="R5G-31-bdu" secondAttribute="height" multiplier="11:1" id="lLb-fH-Rma"/>
                                 </constraints>
@@ -122,8 +128,16 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="ev2-Zj-55f" secondAttribute="bottom" constant="117" id="xzz-Gb-M0v"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailLabel" destination="gr6-P1-Qu8" id="IFe-Wj-moI"/>
+                        <outlet property="fullNameLabel" destination="QXO-Il-pI6" id="HMg-45-kdO"/>
+                        <outlet property="identityCardNoLabel" destination="Mev-uH-eQB" id="Qiu-Yi-TtR"/>
+                        <outlet property="passwordLabel" destination="R5G-31-bdu" id="jxZ-Iu-d2j"/>
+                        <outlet property="phoneNoLabel" destination="DQU-Z3-ZdQ" id="asA-Lw-jxP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="23I-7T-PZt" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="164" y="50"/>
         </scene>
