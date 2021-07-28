@@ -229,7 +229,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="9jL-uo-4ve">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appLogo" translatesAutoresizingMaskIntoConstraints="NO" id="9jL-uo-4ve">
                                 <rect key="frame" x="142" y="97" width="130" height="130"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="9jL-uo-4ve" secondAttribute="height" multiplier="1:1" id="2Tg-ji-kKx"/>
@@ -265,7 +265,7 @@
                                     <color key="titleColor" red="0.0" green="0.36296361430000001" blue="0.76317376209999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="bid-HT-lfP" kind="show" id="GO5-1k-xMa"/>
+                                    <segue destination="bid-HT-lfP" kind="presentation" modalPresentationStyle="fullScreen" id="GO5-1k-xMa"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pi8-sh-WBN">
@@ -328,12 +328,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="appLogo" width="1160" height="1162"/>
         <image name="calendar" catalog="system" width="128" height="106"/>
         <image name="doc.text" catalog="system" width="115" height="128"/>
         <image name="gearshape" catalog="system" width="128" height="121"/>
         <image name="giftcard" catalog="system" width="128" height="88"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
-        <image name="logo" width="1206" height="1202"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="power" catalog="system" width="128" height="124"/>
         <namedColor name="AccentColor">
