@@ -1,0 +1,6 @@
+framework module Pods_VaxGuideSG {
+  umbrella header "Pods-VaxGuideSG-umbrella.h"
+
+  export *
+  module * { export * }
+}

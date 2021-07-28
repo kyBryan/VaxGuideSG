@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16C906CD0E18183AB32566F2 /* Pods_VaxGuideSG.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 923E9B0B779835E4FB0C008D /* Pods_VaxGuideSG.framework */; };
 		8A383A9F26B0FB9A009906C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A383A9E26B0FB9A009906C3 /* AppDelegate.swift */; };
 		8A383AA126B0FB9A009906C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A383AA026B0FB9A009906C3 /* SceneDelegate.swift */; };
 		8A383AA326B0FB9A009906C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A383AA226B0FB9A009906C3 /* ViewController.swift */; };
@@ -19,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		24523A97F98CF0332AF2EBC3 /* Pods-VaxGuideSG.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VaxGuideSG.debug.xcconfig"; path = "Target Support Files/Pods-VaxGuideSG/Pods-VaxGuideSG.debug.xcconfig"; sourceTree = "<group>"; };
+		338E37B953AEBD4D0C1C257F /* Pods-VaxGuideSG.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VaxGuideSG.release.xcconfig"; path = "Target Support Files/Pods-VaxGuideSG/Pods-VaxGuideSG.release.xcconfig"; sourceTree = "<group>"; };
 		8A383A9B26B0FB9A009906C3 /* VaxGuideSG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VaxGuideSG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A383A9E26B0FB9A009906C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A383AA026B0FB9A009906C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +33,7 @@
 		8A383AAF26B0FB9B009906C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A502EA026B1123000BF437A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8A502EA226B1124400BF437A /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		923E9B0B779835E4FB0C008D /* Pods_VaxGuideSG.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VaxGuideSG.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +41,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16C906CD0E18183AB32566F2 /* Pods_VaxGuideSG.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		160D3E81C652F5BF1A9A1039 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				923E9B0B779835E4FB0C008D /* Pods_VaxGuideSG.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8A383A9226B0FB9A009906C3 = {
 			isa = PBXGroup;
 			children = (
 				8A383A9D26B0FB9A009906C3 /* VaxGuideSG */,
 				8A383A9C26B0FB9A009906C3 /* Products */,
+				A59D86E759F3C77C9776A665 /* Pods */,
+				160D3E81C652F5BF1A9A1039 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,6 +131,16 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		A59D86E759F3C77C9776A665 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				24523A97F98CF0332AF2EBC3 /* Pods-VaxGuideSG.debug.xcconfig */,
+				338E37B953AEBD4D0C1C257F /* Pods-VaxGuideSG.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -123,9 +148,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A383AB226B0FB9B009906C3 /* Build configuration list for PBXNativeTarget "VaxGuideSG" */;
 			buildPhases = (
+				C1DE03C6D67293E3D3692507 /* [CP] Check Pods Manifest.lock */,
 				8A383A9726B0FB9A009906C3 /* Sources */,
 				8A383A9826B0FB9A009906C3 /* Frameworks */,
 				8A383A9926B0FB9A009906C3 /* Resources */,
+				193C240F5D1094E3548F01E8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -180,6 +207,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		193C240F5D1094E3548F01E8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VaxGuideSG/Pods-VaxGuideSG-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VaxGuideSG/Pods-VaxGuideSG-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VaxGuideSG/Pods-VaxGuideSG-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1DE03C6D67293E3D3692507 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VaxGuideSG-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8A383A9726B0FB9A009906C3 /* Sources */ = {
@@ -335,6 +404,7 @@
 		};
 		8A383AB326B0FB9B009906C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24523A97F98CF0332AF2EBC3 /* Pods-VaxGuideSG.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -353,6 +423,7 @@
 		};
 		8A383AB426B0FB9B009906C3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 338E37B953AEBD4D0C1C257F /* Pods-VaxGuideSG.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

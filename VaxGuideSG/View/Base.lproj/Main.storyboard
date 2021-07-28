@@ -126,7 +126,19 @@
                             </button>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wrf-84-ehX">
                                 <rect key="frame" x="414" y="88" width="414" height="808"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WEk-y4-xsb">
+                                        <rect key="frame" x="54" y="66" width="312" height="77"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Start Your Vaccination Tour Guide"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="WEk-y4-xsb" secondAttribute="trailing" constant="20" id="UvY-Lw-hUD"/>
+                                    <constraint firstItem="WEk-y4-xsb" firstAttribute="top" secondItem="wrf-84-ehX" secondAttribute="top" constant="20" id="XsZ-Dn-4QY"/>
+                                    <constraint firstItem="WEk-y4-xsb" firstAttribute="leading" secondItem="wrf-84-ehX" secondAttribute="leading" constant="20" id="Z1o-SK-lfd"/>
+                                </constraints>
                                 <variation key="heightClass=compact" insetsLayoutMarginsFromSafeArea="NO"/>
                             </view>
                         </subviews>
@@ -152,13 +164,14 @@
                     </navigationItem>
                     <size key="freeformSize" width="828" height="896"/>
                     <connections>
+                        <outlet property="homeView" destination="wrf-84-ehX" id="jgw-36-SFU"/>
                         <outlet property="leading" destination="goA-ik-4Af" id="izb-hI-s8c"/>
                         <outlet property="trailing" destination="Si4-wd-fbl" id="S0L-HO-f4f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1188" y="73"/>
+            <point key="canvasLocation" x="1186.9565217391305" y="72.991071428571431"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="A41-hY-FJH">

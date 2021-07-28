@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var leading: NSLayoutConstraint!
     @IBOutlet weak var trailing: NSLayoutConstraint!
     
+    @IBOutlet weak var homeView: UIView!
+    
     var menuFlag = false
     
     override func viewDidLoad() {
