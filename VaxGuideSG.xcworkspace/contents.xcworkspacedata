@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:VaxGuideSG/Model/Users+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:VaxGuideSG/Model/Users+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
       location = "group:VaxGuideSG.xcodeproj">
    </FileRef>
    <FileRef
