@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  VaxGuideSG
 //
-//  Created by owrmac on 28/7/21.
+//  Created by bryan on 28/7/21.
 //
 
 import UIKit

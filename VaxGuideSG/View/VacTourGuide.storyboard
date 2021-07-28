@@ -17,22 +17,128 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ya8-gP-ffj">
-                                <rect key="frame" x="166" y="133" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Before You Start!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EsX-LF-Zh2">
+                                <rect key="frame" x="0.0" y="74" width="414" height="37"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you at the appointed Vaccination Centre?" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G1B-sZ-zKa">
+                                <rect key="frame" x="20" y="161" width="374" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="marker" translatesAutoresizingMaskIntoConstraints="NO" id="YIv-be-RaD">
+                                <rect key="frame" x="50" y="234" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="gjr-lf-502"/>
+                                    <constraint firstAttribute="height" constant="25" id="ogu-HR-0FB"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VaccineAddr" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oUG-na-7UT">
+                                <rect key="frame" x="95" y="234" width="299" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Document Check List:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="524-mJ-JgJ">
+                                <rect key="frame" x="20" y="309" width="168" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1) NRIC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="crc-Je-N1l">
+                                <rect key="frame" x="35" y="335" width="359" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2) Vaccination Record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q1w-1g-B52">
+                                <rect key="frame" x="35" y="358" width="359" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="81j-W3-XUT">
+                                <rect key="frame" x="321" y="811" width="73" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Proceed"/>
+                                <connections>
+                                    <segue destination="Qjb-cH-554" kind="show" id="DwB-5q-VRU"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Q1w-1g-B52" secondAttribute="trailing" constant="20" id="49Y-c2-cNz"/>
+                            <constraint firstItem="G1B-sZ-zKa" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="6F3-f2-Cuv"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="oUG-na-7UT" secondAttribute="trailing" constant="20" id="6sS-3k-hKe"/>
+                            <constraint firstItem="crc-Je-N1l" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="35" id="Au2-62-SBZ"/>
+                            <constraint firstItem="G1B-sZ-zKa" firstAttribute="top" secondItem="EsX-LF-Zh2" secondAttribute="bottom" constant="50" id="FZh-D9-y0x"/>
+                            <constraint firstItem="Q1w-1g-B52" firstAttribute="top" secondItem="crc-Je-N1l" secondAttribute="bottom" constant="5" id="IPI-um-FRe"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="81j-W3-XUT" secondAttribute="trailing" constant="20" id="IvF-lf-1jy"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="81j-W3-XUT" secondAttribute="bottom" constant="15" id="NbQ-W5-N4p"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="EsX-LF-Zh2" secondAttribute="trailing" id="QQs-4b-HWy"/>
+                            <constraint firstItem="EsX-LF-Zh2" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="SeS-R4-ge1"/>
+                            <constraint firstItem="YIv-be-RaD" firstAttribute="top" secondItem="G1B-sZ-zKa" secondAttribute="bottom" constant="25" id="Tpi-g0-of8"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="G1B-sZ-zKa" secondAttribute="trailing" constant="20" id="W0s-85-1TC"/>
+                            <constraint firstItem="crc-Je-N1l" firstAttribute="top" secondItem="524-mJ-JgJ" secondAttribute="bottom" constant="5" id="Zab-mJ-gUc"/>
+                            <constraint firstItem="EsX-LF-Zh2" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="30" id="fD5-Dj-Glf"/>
+                            <constraint firstItem="524-mJ-JgJ" firstAttribute="top" secondItem="YIv-be-RaD" secondAttribute="bottom" constant="50" id="jlO-l3-MIs"/>
+                            <constraint firstItem="YIv-be-RaD" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="50" id="kLO-rw-Jn3"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="crc-Je-N1l" secondAttribute="trailing" constant="20" id="lKm-Y4-Qq8"/>
+                            <constraint firstItem="Q1w-1g-B52" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="35" id="prU-Vg-aSV"/>
+                            <constraint firstItem="oUG-na-7UT" firstAttribute="leading" secondItem="YIv-be-RaD" secondAttribute="trailing" constant="20" id="vX9-bN-dQw"/>
+                            <constraint firstItem="524-mJ-JgJ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="yEg-Zm-WJd"/>
+                            <constraint firstItem="oUG-na-7UT" firstAttribute="top" secondItem="G1B-sZ-zKa" secondAttribute="bottom" constant="25" id="yOA-yB-7hG"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="vacAddr" destination="oUG-na-7UT" id="ScW-Sm-fdX"/>
+                        <outlet property="vacQnsLbl" destination="G1B-sZ-zKa" id="ejm-ui-T0i"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-191" y="-974"/>
+            <point key="canvasLocation" x="-191.30434782608697" y="-974.33035714285711"/>
+        </scene>
+        <!--Vac Tour GuideVC1-->
+        <scene sceneID="aBi-zg-48r">
+            <objects>
+                <viewController id="Qjb-cH-554" customClass="VacTourGuideVC1" customModule="VaxGuideSG" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kXb-Zc-9Fl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S5s-YM-fir">
+                                <rect key="frame" x="0.0" y="30" width="414" height="0.0"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ns2-0F-MAq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ns2-0F-MAq" firstAttribute="trailing" secondItem="S5s-YM-fir" secondAttribute="trailing" id="BTf-mS-9qb"/>
+                            <constraint firstItem="S5s-YM-fir" firstAttribute="top" secondItem="Ns2-0F-MAq" secondAttribute="top" constant="30" id="Y3L-cB-a0d"/>
+                            <constraint firstItem="S5s-YM-fir" firstAttribute="leading" secondItem="Ns2-0F-MAq" secondAttribute="leading" id="sv5-2U-TNM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="r7T-8D-5v7"/>
+                    <connections>
+                        <outlet property="vacAddrBigLbl" destination="S5s-YM-fir" id="c43-hv-ukd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YDJ-JF-7u8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="764" y="-974"/>
         </scene>
     </scenes>
     <resources>
+        <image name="marker" width="512" height="512"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -1,16 +1,24 @@
 PODS:
+  - BButton (4.0.2)
   - SkyFloatingLabelTextField (3.8.0)
+  - SmoothButton (0.0.3)
 
 DEPENDENCIES:
+  - BButton
   - SkyFloatingLabelTextField (~> 3.0)
+  - SmoothButton
 
 SPEC REPOS:
   trunk:
+    - BButton
     - SkyFloatingLabelTextField
+    - SmoothButton
 
 SPEC CHECKSUMS:
+  BButton: ab0f2ed3b998ae73c5188b57d270d81e4a1eeb27
   SkyFloatingLabelTextField: 5a338412114808e961fe2d14ea2c5452c8b6e4aa
+  SmoothButton: 993d5d9c80828754adac8444586fb06f392d5298
 
-PODFILE CHECKSUM: a0b009383183e54fdeb8d13f27e0d8c92e912d7e
+PODFILE CHECKSUM: 384c84ad510b888d6a1f8f9069007270fc58caec
 
 COCOAPODS: 1.10.1

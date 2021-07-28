@@ -3,55 +3,145 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		10CC0DED42AC8D413BCA321D4A72C415 /* UITextField+fixCaretPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B7A91700ABBA0BFF7FCEB5077CB987 /* UITextField+fixCaretPosition.swift */; };
-		326E51DD1E7BEF1CDFA1E6CCF8B4D133 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		3F382618063FE40A205947DCBF27959C /* SkyFloatingLabelTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 457CADA1BD85F608FD0C6BFA4F0AACDF /* SkyFloatingLabelTextField-dummy.m */; };
-		8108070A844FCFB7CF33AC9BF7FC2324 /* Pods-VaxGuideSG-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A509FE0849DFCA95D9FE183AE2764F80 /* Pods-VaxGuideSG-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B09FEC0B831B6F4E6D415077BF437A2A /* SkyFloatingLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417B5135DE816FF15062A92FFCDA3951 /* SkyFloatingLabelTextField.swift */; };
-		B366029914DC017AB66A466CE12CFC1D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		D6560C23E0F6A5F13CE2F4C2A3774A73 /* SkyFloatingLabelTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B7006994319654F1B2BE2A36497AEC9 /* SkyFloatingLabelTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D8249B91B2BE3E387D1E155BF44F72AF /* Pods-VaxGuideSG-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A84D7F8D8638AC224B4A0C7CDB570758 /* Pods-VaxGuideSG-dummy.m */; };
-		EE63B846EDD498D4335668FFD70F3F25 /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5E41D0323800AF496C90DA7AFF7E14 /* SkyFloatingLabelTextFieldWithIcon.swift */; };
+		0258CD3FCD5A08380C732108FACD31EC /* ThemifyIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205D7B4C7E705BD5AE10FABCC9BEBAC4 /* ThemifyIcon.swift */; };
+		073D52B4F0BF06365DD903C8BBC6CC3D /* SwiftIconLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34379303A6107B974A66F8FE53929C0A /* SwiftIconLabel.swift */; };
+		0985F2F7AB7CF7B0D1423894FF30EC07 /* Octicon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F489E7AB603F487BEA29F2C2AFDAAE44 /* Octicon.swift */; };
+		09BF94966E46B6C9811090454B7009F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59040624F92B050B2ECF8FA644B47678 /* Foundation.framework */; };
+		10CC0DED42AC8D413BCA321D4A72C415 /* UITextField+fixCaretPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A979274FF7A2BA5D22E2DB4100D3AB22 /* UITextField+fixCaretPosition.swift */; };
+		11DCB65A6D716DC7205C4B52231C46F0 /* SmoothButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E6A268360C27EF506026FF27316FF5CC /* SmoothButton-dummy.m */; };
+		13120C8D943C52EA79A2598772EE98B3 /* IonIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0967900790C3E5079AACF9597651FF4F /* IonIcons.swift */; };
+		21F540890FB78FA88968F802D63D64BA /* FontAwesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C449AC02A514702C420FF9D5C9216D2 /* FontAwesome.swift */; };
+		326E51DD1E7BEF1CDFA1E6CCF8B4D133 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59040624F92B050B2ECF8FA644B47678 /* Foundation.framework */; };
+		362C02DD51D9FA86F5ADE3633906F5FC /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7DA2E0AF4BC800656037A739D7ED3349 /* Ionicons.ttf */; };
+		3F382618063FE40A205947DCBF27959C /* SkyFloatingLabelTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 105C3E33CC971A42E91AC749B45139AF /* SkyFloatingLabelTextField-dummy.m */; };
+		436884B6E496DB9969CF399B7D10B7C0 /* SmoothButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DDF14A775DD3B227778EC586818E49A /* SmoothButton.xib */; };
+		453CEEE47822A61293380C15B9DEF19F /* octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 697CCC4FDB06BE775EBFCA422C25DA06 /* octicons.ttf */; };
+		58D764C5EBF11904ABF95EAE0343491E /* BButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C37BD898238ADA6E38C0DD19331AAE12 /* BButton-dummy.m */; };
+		5B08BDF68B8691F6FEB1AC0FAFF2A2D1 /* MapIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3784956957CD12DAB5BF05966C0A1AE8 /* MapIcon.swift */; };
+		60BD0012B3D2E4FE324FF6918FC9D1E1 /* NSString+FontAwesome.h in Headers */ = {isa = PBXBuildFile; fileRef = EA942DF128FF93E15C3262E2B9F5F34C /* NSString+FontAwesome.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		678B78D60669C075117D371244778CC7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B68540C55CA43970CDF0C24725F02FA /* CoreGraphics.framework */; };
+		707719EBD87266E01A190E9D1BD532B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59040624F92B050B2ECF8FA644B47678 /* Foundation.framework */; };
+		73424B71272F8D0072094D2EF9A92090 /* SmoothButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C61856CC26AEE9E93BFDC19315CA465 /* SmoothButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		77ABB139CDA45B4A50F65D6B4687320E /* themify.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AEE86CB1A4551E1696EDF6B3B147C014 /* themify.ttf */; };
+		8708F3C54BCFAE309E562F2274ED899D /* Pods-VaxGuideSG-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A509FE0849DFCA95D9FE183AE2764F80 /* Pods-VaxGuideSG-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92ADF29B0702CC84033BB7A8B75687C8 /* UIColor+BButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F759618DC283C9E3A53E4A878B6764 /* UIColor+BButton.m */; };
+		A205114942AF1D83357DD493D6C0C070 /* MaterialIcons-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 526E7977D35D23418C1373FC81D10118 /* MaterialIcons-Regular.ttf */; };
+		ADFCFD5ECE3260450275D05C13968908 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59040624F92B050B2ECF8FA644B47678 /* Foundation.framework */; };
+		B09FEC0B831B6F4E6D415077BF437A2A /* SkyFloatingLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0455E72C3ECF5F7293CFDE25B1986AB3 /* SkyFloatingLabelTextField.swift */; };
+		B2C9327A5CB29B9E779F5C3236AD4C0B /* FontLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC026074886EB56DDF5328C15A141AC /* FontLoader.swift */; };
+		B462CEB00CBD652FC06DA46CC64DAD0F /* SwiftIconFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E8932252B61BF920B78205471966CF /* SwiftIconFont.swift */; };
+		B4AFDA182EE8AEB3B7902BB380834657 /* map-icons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 571C8706FC5682F273D0E7689E7D4040 /* map-icons.ttf */; };
+		BCE01C48F5C29010A283FBF1DF7B0DCD /* BButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EDB0E225E4409C7CED994B6EB8335C49 /* BButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEA5C900158CEFE9E216A2A21A25C57F /* UIColor+BButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 171DD3E51BA81D0ABBBC9C23AFBBF11E /* UIColor+BButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF824AB0D605FFDDD2EC4F08500F0F62 /* BButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F37FBB8DDA457DC0D7CA1BC06DB6F91 /* BButton.m */; };
+		C4DCE65C540F0F527AEDE5069BC68CCE /* MaterialIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7A5B309CB31A668337E46A30D0125F /* MaterialIcon.swift */; };
+		C8618074D5FD374E38C57FA5F7AB31AF /* SmoothButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB5FEE2436BE7FB2E0F86E2CF51D334 /* SmoothButton.swift */; };
+		CA5FBAB14B16EC447BE384558F4412CA /* Pods-VaxGuideSG-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A84D7F8D8638AC224B4A0C7CDB570758 /* Pods-VaxGuideSG-dummy.m */; };
+		D6403B0D5F70C5D80D0FD6B69E29149B /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF44CD5B30707EB23F11B696F8434B88 /* FontAwesome.ttf */; };
+		D6560C23E0F6A5F13CE2F4C2A3774A73 /* SkyFloatingLabelTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1559514D6270B10B7C8FACBE2EEC4F20 /* SkyFloatingLabelTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D8C89AD1525B719FDDD8FC39947C707A /* open-iconic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3FD6887C689A853661BBB82F1BDFB734 /* open-iconic.ttf */; };
+		ED1B92D893282A2C034EF77FF6142D0E /* BButton.h in Headers */ = {isa = PBXBuildFile; fileRef = E3D64F87FA48C4C312AD2947CF8DDC6A /* BButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE63B846EDD498D4335668FFD70F3F25 /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D61D24A1C12CEBA1794B7518CA74AC /* SkyFloatingLabelTextFieldWithIcon.swift */; };
+		F129C8182927385DC8D67094C446ED7F /* Iconic.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE43DCCBF18F7A8B13CCB20B7D390C64 /* Iconic.swift */; };
+		FD48635606938C944A02861FD17CDBB5 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0BC06C375848B4A9C6C9C80FB514312A /* FontAwesome.ttf */; };
+		FE2119006BA331D97AE2091E56E4CA23 /* NSString+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 56F3181A016F1EE23C2B7E8AC96E3758 /* NSString+FontAwesome.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7F663F7E52A93FE568BDB25C7210F875 /* PBXContainerItemProxy */ = {
+		588B55EA05D132E753EDB98DBDC221D3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = DFBAF98039AB4BA7927B611FB65B61BC;
 			remoteInfo = SkyFloatingLabelTextField;
 		};
+		AF853A8D3919582A9E6070EF34A05C4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FC5A63ADC3C0566D37F1872BEFBB86C;
+			remoteInfo = BButton;
+		};
+		DDD285C95EC384D0F25345006A6FB349 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32F7787AA30FAE05D8D80B53025BAA89;
+			remoteInfo = SmoothButton;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02D61D24A1C12CEBA1794B7518CA74AC /* SkyFloatingLabelTextFieldWithIcon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkyFloatingLabelTextFieldWithIcon.swift; path = Sources/SkyFloatingLabelTextFieldWithIcon.swift; sourceTree = "<group>"; };
 		03C3341B4F07C830A79A4C8E6885359C /* Pods-VaxGuideSG.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VaxGuideSG.release.xcconfig"; sourceTree = "<group>"; };
-		0B7006994319654F1B2BE2A36497AEC9 /* SkyFloatingLabelTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SkyFloatingLabelTextField-umbrella.h"; sourceTree = "<group>"; };
-		2C6A01652C3E31AC39CAB2238844F146 /* SkyFloatingLabelTextField-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SkyFloatingLabelTextField-Info.plist"; sourceTree = "<group>"; };
-		2EA52B8E0FF443470DC2F947F1CF59C6 /* SkyFloatingLabelTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SkyFloatingLabelTextField.modulemap; sourceTree = "<group>"; };
-		3C5E41D0323800AF496C90DA7AFF7E14 /* SkyFloatingLabelTextFieldWithIcon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkyFloatingLabelTextFieldWithIcon.swift; path = Sources/SkyFloatingLabelTextFieldWithIcon.swift; sourceTree = "<group>"; };
-		417B5135DE816FF15062A92FFCDA3951 /* SkyFloatingLabelTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkyFloatingLabelTextField.swift; path = Sources/SkyFloatingLabelTextField.swift; sourceTree = "<group>"; };
-		4330792642CF7513EE912FDA623AF2F7 /* SkyFloatingLabelTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SkyFloatingLabelTextField-prefix.pch"; sourceTree = "<group>"; };
-		457CADA1BD85F608FD0C6BFA4F0AACDF /* SkyFloatingLabelTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SkyFloatingLabelTextField-dummy.m"; sourceTree = "<group>"; };
-		72BF52B4898258517DEF5A0A88574E56 /* SkyFloatingLabelTextField.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SkyFloatingLabelTextField.release.xcconfig; sourceTree = "<group>"; };
-		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		0455E72C3ECF5F7293CFDE25B1986AB3 /* SkyFloatingLabelTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkyFloatingLabelTextField.swift; path = Sources/SkyFloatingLabelTextField.swift; sourceTree = "<group>"; };
+		0967900790C3E5079AACF9597651FF4F /* IonIcons.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IonIcons.swift; path = SmoothButton/Classes/SwiftIconFont/IonIcons.swift; sourceTree = "<group>"; };
+		0BC06C375848B4A9C6C9C80FB514312A /* FontAwesome.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = FontAwesome.ttf; path = SmoothButton/Resources/FontAwesome.ttf; sourceTree = "<group>"; };
+		0F37FBB8DDA457DC0D7CA1BC06DB6F91 /* BButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BButton.m; path = BButton/Classes/BButton.m; sourceTree = "<group>"; };
+		105C3E33CC971A42E91AC749B45139AF /* SkyFloatingLabelTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SkyFloatingLabelTextField-dummy.m"; sourceTree = "<group>"; };
+		140195FA2ACE2642B1CCCAB09E43B182 /* SmoothButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SmoothButton.debug.xcconfig; sourceTree = "<group>"; };
+		1559514D6270B10B7C8FACBE2EEC4F20 /* SkyFloatingLabelTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SkyFloatingLabelTextField-umbrella.h"; sourceTree = "<group>"; };
+		171DD3E51BA81D0ABBBC9C23AFBBF11E /* UIColor+BButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+BButton.h"; path = "BButton/Classes/UIColor+BButton.h"; sourceTree = "<group>"; };
+		205D7B4C7E705BD5AE10FABCC9BEBAC4 /* ThemifyIcon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThemifyIcon.swift; path = SmoothButton/Classes/SwiftIconFont/ThemifyIcon.swift; sourceTree = "<group>"; };
+		34379303A6107B974A66F8FE53929C0A /* SwiftIconLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftIconLabel.swift; path = SmoothButton/Classes/SwiftIconFont/SwiftIconLabel.swift; sourceTree = "<group>"; };
+		3784956957CD12DAB5BF05966C0A1AE8 /* MapIcon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MapIcon.swift; path = SmoothButton/Classes/SwiftIconFont/MapIcon.swift; sourceTree = "<group>"; };
+		3C61856CC26AEE9E93BFDC19315CA465 /* SmoothButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SmoothButton-umbrella.h"; sourceTree = "<group>"; };
+		3FD6887C689A853661BBB82F1BDFB734 /* open-iconic.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "open-iconic.ttf"; path = "SmoothButton/Resources/open-iconic.ttf"; sourceTree = "<group>"; };
+		424D42A7457A1C22C1D3F47D9EF21082 /* SmoothButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SmoothButton.framework; path = SmoothButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43F759618DC283C9E3A53E4A878B6764 /* UIColor+BButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+BButton.m"; path = "BButton/Classes/UIColor+BButton.m"; sourceTree = "<group>"; };
+		4AB5FEE2436BE7FB2E0F86E2CF51D334 /* SmoothButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SmoothButton.swift; path = SmoothButton/Classes/SmoothButton.swift; sourceTree = "<group>"; };
+		4AC026074886EB56DDF5328C15A141AC /* FontLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontLoader.swift; path = SmoothButton/Classes/SwiftIconFont/FontLoader.swift; sourceTree = "<group>"; };
+		4B68540C55CA43970CDF0C24725F02FA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		526E7977D35D23418C1373FC81D10118 /* MaterialIcons-Regular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "MaterialIcons-Regular.ttf"; path = "SmoothButton/Resources/MaterialIcons-Regular.ttf"; sourceTree = "<group>"; };
+		56F3181A016F1EE23C2B7E8AC96E3758 /* NSString+FontAwesome.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+FontAwesome.m"; path = "BButton/Classes/NSString+FontAwesome.m"; sourceTree = "<group>"; };
+		571C8706FC5682F273D0E7689E7D4040 /* map-icons.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "map-icons.ttf"; path = "SmoothButton/Resources/map-icons.ttf"; sourceTree = "<group>"; };
+		59040624F92B050B2ECF8FA644B47678 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5DF7533A54AA07E834EB5953083611B0 /* BButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BButton.release.xcconfig; sourceTree = "<group>"; };
+		6630678527D7082BCA658D3FE2AE9DAD /* SmoothButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SmoothButton.release.xcconfig; sourceTree = "<group>"; };
+		697CCC4FDB06BE775EBFCA422C25DA06 /* octicons.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = octicons.ttf; path = SmoothButton/Resources/octicons.ttf; sourceTree = "<group>"; };
+		6C449AC02A514702C420FF9D5C9216D2 /* FontAwesome.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesome.swift; path = SmoothButton/Classes/SwiftIconFont/FontAwesome.swift; sourceTree = "<group>"; };
+		70CB04E97044DF9FFD1366DCB0F17D83 /* BButton-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BButton-Info.plist"; sourceTree = "<group>"; };
+		76E41E8D6EB8AD430253CFF3BC7D4C7C /* SmoothButton-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SmoothButton-Info.plist"; sourceTree = "<group>"; };
+		7DA2E0AF4BC800656037A739D7ED3349 /* Ionicons.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = Ionicons.ttf; path = SmoothButton/Resources/Ionicons.ttf; sourceTree = "<group>"; };
+		7DDF14A775DD3B227778EC586818E49A /* SmoothButton.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = SmoothButton.xib; path = SmoothButton/Resources/SmoothButton.xib; sourceTree = "<group>"; };
 		8030A10864CB81CB49716C16C07A50EA /* Pods-VaxGuideSG-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VaxGuideSG-acknowledgements.plist"; sourceTree = "<group>"; };
-		88B7A91700ABBA0BFF7FCEB5077CB987 /* UITextField+fixCaretPosition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITextField+fixCaretPosition.swift"; path = "Sources/UITextField+fixCaretPosition.swift"; sourceTree = "<group>"; };
-		8C719D278B58B38574C26E7C42D3C286 /* SkyFloatingLabelTextField.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SkyFloatingLabelTextField.debug.xcconfig; sourceTree = "<group>"; };
+		808A85489B996E825124110D2FDCF1D8 /* BButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BButton.modulemap; sourceTree = "<group>"; };
+		80E8932252B61BF920B78205471966CF /* SwiftIconFont.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftIconFont.swift; path = SmoothButton/Classes/SwiftIconFont/SwiftIconFont.swift; sourceTree = "<group>"; };
+		967294C341DF9315030BD734DDF3BBB7 /* BButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BButton.framework; path = BButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98EBEF95FE2EDF5BE078F355337E8B60 /* Pods-VaxGuideSG-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VaxGuideSG-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9C8F6827DE84BD65CB8A2ECDD7F6E000 /* SkyFloatingLabelTextField.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SkyFloatingLabelTextField.release.xcconfig; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A14304C149103498D40B670421BB35EA /* Pods-VaxGuideSG-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VaxGuideSG-Info.plist"; sourceTree = "<group>"; };
 		A3A94CD2BB4E407BF9815A532D981A3D /* Pods-VaxGuideSG.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-VaxGuideSG.modulemap"; sourceTree = "<group>"; };
 		A509FE0849DFCA95D9FE183AE2764F80 /* Pods-VaxGuideSG-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VaxGuideSG-umbrella.h"; sourceTree = "<group>"; };
 		A84D7F8D8638AC224B4A0C7CDB570758 /* Pods-VaxGuideSG-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VaxGuideSG-dummy.m"; sourceTree = "<group>"; };
+		A979274FF7A2BA5D22E2DB4100D3AB22 /* UITextField+fixCaretPosition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITextField+fixCaretPosition.swift"; path = "Sources/UITextField+fixCaretPosition.swift"; sourceTree = "<group>"; };
+		AAADB7F46051EA1478DF0651A3AF0A89 /* SkyFloatingLabelTextField-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SkyFloatingLabelTextField-Info.plist"; sourceTree = "<group>"; };
+		AEE86CB1A4551E1696EDF6B3B147C014 /* themify.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = themify.ttf; path = SmoothButton/Resources/themify.ttf; sourceTree = "<group>"; };
+		B0AE339792754E4F290053ACBB5FCB6C /* SkyFloatingLabelTextField.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SkyFloatingLabelTextField.debug.xcconfig; sourceTree = "<group>"; };
 		B40B23CD700DF6F4C940A154495DF109 /* Pods_VaxGuideSG.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_VaxGuideSG.framework; path = "Pods-VaxGuideSG.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C24205F445CE84F004255E75FC068800 /* SkyFloatingLabelTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SkyFloatingLabelTextField.modulemap; sourceTree = "<group>"; };
+		C37BD898238ADA6E38C0DD19331AAE12 /* BButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BButton-dummy.m"; sourceTree = "<group>"; };
 		C4C9ECF2B58A6884D910F5AA7B5075D1 /* Pods-VaxGuideSG-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VaxGuideSG-frameworks.sh"; sourceTree = "<group>"; };
+		CC0674965E5D6C13C27402026A93C191 /* SkyFloatingLabelTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SkyFloatingLabelTextField-prefix.pch"; sourceTree = "<group>"; };
+		CD21E7CAC80A6F865ECF57F3883237D7 /* BButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BButton.debug.xcconfig; sourceTree = "<group>"; };
+		CE91B5CDCF87D59D56C326E715BFF39F /* SmoothButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SmoothButton-prefix.pch"; sourceTree = "<group>"; };
 		D392C11EB32EACD5EC9C8D37B51482B6 /* SkyFloatingLabelTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SkyFloatingLabelTextField.framework; path = SkyFloatingLabelTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D68E91E344B50200B974AE676CB5A8F2 /* BButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BButton-prefix.pch"; sourceTree = "<group>"; };
 		DA3B07B7C055A142AF48DEBF83AB4860 /* Pods-VaxGuideSG.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VaxGuideSG.debug.xcconfig"; sourceTree = "<group>"; };
+		DE43DCCBF18F7A8B13CCB20B7D390C64 /* Iconic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Iconic.swift; path = SmoothButton/Classes/SwiftIconFont/Iconic.swift; sourceTree = "<group>"; };
+		DF44CD5B30707EB23F11B696F8434B88 /* FontAwesome.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = FontAwesome.ttf; path = BButton/resources/FontAwesome.ttf; sourceTree = "<group>"; };
+		E3D64F87FA48C4C312AD2947CF8DDC6A /* BButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BButton.h; path = BButton/Classes/BButton.h; sourceTree = "<group>"; };
+		E6A268360C27EF506026FF27316FF5CC /* SmoothButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SmoothButton-dummy.m"; sourceTree = "<group>"; };
+		EA942DF128FF93E15C3262E2B9F5F34C /* NSString+FontAwesome.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+FontAwesome.h"; path = "BButton/Classes/NSString+FontAwesome.h"; sourceTree = "<group>"; };
+		EDB0E225E4409C7CED994B6EB8335C49 /* BButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BButton-umbrella.h"; sourceTree = "<group>"; };
+		F489E7AB603F487BEA29F2C2AFDAAE44 /* Octicon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Octicon.swift; path = SmoothButton/Classes/SwiftIconFont/Octicon.swift; sourceTree = "<group>"; };
+		F6B578B7BCD38F6305839ABFB3C902DC /* SmoothButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SmoothButton.modulemap; sourceTree = "<group>"; };
+		FB7A5B309CB31A668337E46A30D0125F /* MaterialIcon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MaterialIcon.swift; path = SmoothButton/Classes/SwiftIconFont/MaterialIcon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,17 +153,53 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3B704166AC8B68895626310592617C9B /* Frameworks */ = {
+		1537E80B8CE582C3DD12375D818DF4AE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B366029914DC017AB66A466CE12CFC1D /* Foundation.framework in Frameworks */,
+				09BF94966E46B6C9811090454B7009F1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		502EB42EC103EA2A8F2A2797575AD60D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				678B78D60669C075117D371244778CC7 /* CoreGraphics.framework in Frameworks */,
+				707719EBD87266E01A190E9D1BD532B0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50DB858D3A9295CC5CC08FFE9D7EEA6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADFCFD5ECE3260450275D05C13968908 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8001EF1E8C372FD31EFFB43C3FBF6F94 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3C7268C446E4FDB39938936D80497551 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				967294C341DF9315030BD734DDF3BBB7 /* BButton.framework */,
+				B40B23CD700DF6F4C940A154495DF109 /* Pods_VaxGuideSG.framework */,
+				D392C11EB32EACD5EC9C8D37B51482B6 /* SkyFloatingLabelTextField.framework */,
+				424D42A7457A1C22C1D3F47D9EF21082 /* SmoothButton.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		414F8C892300FBB3DE13F3D4CD7AE6C5 /* Pods-VaxGuideSG */ = {
 			isa = PBXGroup;
 			children = (
@@ -91,29 +217,62 @@
 			path = "Target Support Files/Pods-VaxGuideSG";
 			sourceTree = "<group>";
 		};
-		4B5B28EADCDFA01D242EDB164DBA4D61 /* Pods */ = {
+		627E1C979F9B98EBFE604BB48F70B910 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				F7051AB8797CF325C5FF4DA40C6334D5 /* SkyFloatingLabelTextField */,
+				C24205F445CE84F004255E75FC068800 /* SkyFloatingLabelTextField.modulemap */,
+				105C3E33CC971A42E91AC749B45139AF /* SkyFloatingLabelTextField-dummy.m */,
+				AAADB7F46051EA1478DF0651A3AF0A89 /* SkyFloatingLabelTextField-Info.plist */,
+				CC0674965E5D6C13C27402026A93C191 /* SkyFloatingLabelTextField-prefix.pch */,
+				1559514D6270B10B7C8FACBE2EEC4F20 /* SkyFloatingLabelTextField-umbrella.h */,
+				B0AE339792754E4F290053ACBB5FCB6C /* SkyFloatingLabelTextField.debug.xcconfig */,
+				9C8F6827DE84BD65CB8A2ECDD7F6E000 /* SkyFloatingLabelTextField.release.xcconfig */,
 			);
-			name = Pods;
+			name = "Support Files";
+			path = "../Target Support Files/SkyFloatingLabelTextField";
 			sourceTree = "<group>";
 		};
-		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+		8001EF1E8C372FD31EFFB43C3FBF6F94 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+				4B68540C55CA43970CDF0C24725F02FA /* CoreGraphics.framework */,
+				59040624F92B050B2ECF8FA644B47678 /* Foundation.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		9079CA694979255F851D0C00E8DF6DBE /* Products */ = {
+		8814A5D9E8FC74282D05FF0224C0E627 /* BButton */ = {
 			isa = PBXGroup;
 			children = (
-				B40B23CD700DF6F4C940A154495DF109 /* Pods_VaxGuideSG.framework */,
-				D392C11EB32EACD5EC9C8D37B51482B6 /* SkyFloatingLabelTextField.framework */,
+				E3D64F87FA48C4C312AD2947CF8DDC6A /* BButton.h */,
+				0F37FBB8DDA457DC0D7CA1BC06DB6F91 /* BButton.m */,
+				EA942DF128FF93E15C3262E2B9F5F34C /* NSString+FontAwesome.h */,
+				56F3181A016F1EE23C2B7E8AC96E3758 /* NSString+FontAwesome.m */,
+				171DD3E51BA81D0ABBBC9C23AFBBF11E /* UIColor+BButton.h */,
+				43F759618DC283C9E3A53E4A878B6764 /* UIColor+BButton.m */,
+				8AE06A24B8725C7C4A5F6442F7155055 /* Resources */,
+				D90EEF7A93DCB96AD961B1B0F48DF061 /* Support Files */,
 			);
-			name = Products;
+			name = BButton;
+			path = BButton;
+			sourceTree = "<group>";
+		};
+		8AE06A24B8725C7C4A5F6442F7155055 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DF44CD5B30707EB23F11B696F8434B88 /* FontAwesome.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		8F9430B4B2EF0D1FC944EAAC2CDD80D0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8814A5D9E8FC74282D05FF0224C0E627 /* BButton */,
+				EB8998DBFB86275212E0D07B86A0674A /* SkyFloatingLabelTextField */,
+				F8BA45B18B1FA6C55D50A8ECCB5B8E24 /* SmoothButton */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		A13A979F2F44AB2C7862F7AAA4C33B13 /* Targets Support Files */ = {
@@ -124,60 +283,122 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		CB9FD3B8ECA3F5191E1F83FD9F6122ED /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6B578B7BCD38F6305839ABFB3C902DC /* SmoothButton.modulemap */,
+				E6A268360C27EF506026FF27316FF5CC /* SmoothButton-dummy.m */,
+				76E41E8D6EB8AD430253CFF3BC7D4C7C /* SmoothButton-Info.plist */,
+				CE91B5CDCF87D59D56C326E715BFF39F /* SmoothButton-prefix.pch */,
+				3C61856CC26AEE9E93BFDC19315CA465 /* SmoothButton-umbrella.h */,
+				140195FA2ACE2642B1CCCAB09E43B182 /* SmoothButton.debug.xcconfig */,
+				6630678527D7082BCA658D3FE2AE9DAD /* SmoothButton.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SmoothButton";
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				4B5B28EADCDFA01D242EDB164DBA4D61 /* Pods */,
-				9079CA694979255F851D0C00E8DF6DBE /* Products */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				8F9430B4B2EF0D1FC944EAAC2CDD80D0 /* Pods */,
+				3C7268C446E4FDB39938936D80497551 /* Products */,
 				A13A979F2F44AB2C7862F7AAA4C33B13 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+		D90EEF7A93DCB96AD961B1B0F48DF061 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				578452D2E740E91742655AC8F1636D1F /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D8B982ECC789764ECE911BDEDA82EB48 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				2EA52B8E0FF443470DC2F947F1CF59C6 /* SkyFloatingLabelTextField.modulemap */,
-				457CADA1BD85F608FD0C6BFA4F0AACDF /* SkyFloatingLabelTextField-dummy.m */,
-				2C6A01652C3E31AC39CAB2238844F146 /* SkyFloatingLabelTextField-Info.plist */,
-				4330792642CF7513EE912FDA623AF2F7 /* SkyFloatingLabelTextField-prefix.pch */,
-				0B7006994319654F1B2BE2A36497AEC9 /* SkyFloatingLabelTextField-umbrella.h */,
-				8C719D278B58B38574C26E7C42D3C286 /* SkyFloatingLabelTextField.debug.xcconfig */,
-				72BF52B4898258517DEF5A0A88574E56 /* SkyFloatingLabelTextField.release.xcconfig */,
+				808A85489B996E825124110D2FDCF1D8 /* BButton.modulemap */,
+				C37BD898238ADA6E38C0DD19331AAE12 /* BButton-dummy.m */,
+				70CB04E97044DF9FFD1366DCB0F17D83 /* BButton-Info.plist */,
+				D68E91E344B50200B974AE676CB5A8F2 /* BButton-prefix.pch */,
+				EDB0E225E4409C7CED994B6EB8335C49 /* BButton-umbrella.h */,
+				CD21E7CAC80A6F865ECF57F3883237D7 /* BButton.debug.xcconfig */,
+				5DF7533A54AA07E834EB5953083611B0 /* BButton.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/SkyFloatingLabelTextField";
+			path = "../Target Support Files/BButton";
 			sourceTree = "<group>";
 		};
-		F7051AB8797CF325C5FF4DA40C6334D5 /* SkyFloatingLabelTextField */ = {
+		E6523FF638A18F422738E0773E35286E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				417B5135DE816FF15062A92FFCDA3951 /* SkyFloatingLabelTextField.swift */,
-				3C5E41D0323800AF496C90DA7AFF7E14 /* SkyFloatingLabelTextFieldWithIcon.swift */,
-				88B7A91700ABBA0BFF7FCEB5077CB987 /* UITextField+fixCaretPosition.swift */,
-				D8B982ECC789764ECE911BDEDA82EB48 /* Support Files */,
+				0BC06C375848B4A9C6C9C80FB514312A /* FontAwesome.ttf */,
+				7DA2E0AF4BC800656037A739D7ED3349 /* Ionicons.ttf */,
+				571C8706FC5682F273D0E7689E7D4040 /* map-icons.ttf */,
+				526E7977D35D23418C1373FC81D10118 /* MaterialIcons-Regular.ttf */,
+				697CCC4FDB06BE775EBFCA422C25DA06 /* octicons.ttf */,
+				3FD6887C689A853661BBB82F1BDFB734 /* open-iconic.ttf */,
+				7DDF14A775DD3B227778EC586818E49A /* SmoothButton.xib */,
+				AEE86CB1A4551E1696EDF6B3B147C014 /* themify.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		EB8998DBFB86275212E0D07B86A0674A /* SkyFloatingLabelTextField */ = {
+			isa = PBXGroup;
+			children = (
+				0455E72C3ECF5F7293CFDE25B1986AB3 /* SkyFloatingLabelTextField.swift */,
+				02D61D24A1C12CEBA1794B7518CA74AC /* SkyFloatingLabelTextFieldWithIcon.swift */,
+				A979274FF7A2BA5D22E2DB4100D3AB22 /* UITextField+fixCaretPosition.swift */,
+				627E1C979F9B98EBFE604BB48F70B910 /* Support Files */,
 			);
 			name = SkyFloatingLabelTextField;
 			path = SkyFloatingLabelTextField;
 			sourceTree = "<group>";
 		};
+		F8BA45B18B1FA6C55D50A8ECCB5B8E24 /* SmoothButton */ = {
+			isa = PBXGroup;
+			children = (
+				6C449AC02A514702C420FF9D5C9216D2 /* FontAwesome.swift */,
+				4AC026074886EB56DDF5328C15A141AC /* FontLoader.swift */,
+				DE43DCCBF18F7A8B13CCB20B7D390C64 /* Iconic.swift */,
+				0967900790C3E5079AACF9597651FF4F /* IonIcons.swift */,
+				3784956957CD12DAB5BF05966C0A1AE8 /* MapIcon.swift */,
+				FB7A5B309CB31A668337E46A30D0125F /* MaterialIcon.swift */,
+				F489E7AB603F487BEA29F2C2AFDAAE44 /* Octicon.swift */,
+				4AB5FEE2436BE7FB2E0F86E2CF51D334 /* SmoothButton.swift */,
+				80E8932252B61BF920B78205471966CF /* SwiftIconFont.swift */,
+				34379303A6107B974A66F8FE53929C0A /* SwiftIconLabel.swift */,
+				205D7B4C7E705BD5AE10FABCC9BEBAC4 /* ThemifyIcon.swift */,
+				E6523FF638A18F422738E0773E35286E /* Resources */,
+				CB9FD3B8ECA3F5191E1F83FD9F6122ED /* Support Files */,
+			);
+			name = SmoothButton;
+			path = SmoothButton;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		A3CE1D577C310126B22BAF4EE8B19D45 /* Headers */ = {
+		93188CE87AE82B037551B1E80CCB0761 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8108070A844FCFB7CF33AC9BF7FC2324 /* Pods-VaxGuideSG-umbrella.h in Headers */,
+				8708F3C54BCFAE309E562F2274ED899D /* Pods-VaxGuideSG-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFF6D11AF614C11E09BEA58582E31708 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCE01C48F5C29010A283FBF1DF7B0DCD /* BButton-umbrella.h in Headers */,
+				ED1B92D893282A2C034EF77FF6142D0E /* BButton.h in Headers */,
+				60BD0012B3D2E4FE324FF6918FC9D1E1 /* NSString+FontAwesome.h in Headers */,
+				BEA5C900158CEFE9E216A2A21A25C57F /* UIColor+BButton.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3E1190EC5B1F45F12F63837B75B441D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73424B71272F8D0072094D2EF9A92090 /* SmoothButton-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,19 +413,57 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		5BCAD4517D74F3FB3C5009C8E6DDABBD /* Pods-VaxGuideSG */ = {
+		32F7787AA30FAE05D8D80B53025BAA89 /* SmoothButton */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 18700D1CEC5EAA4560E540100FD66271 /* Build configuration list for PBXNativeTarget "Pods-VaxGuideSG" */;
+			buildConfigurationList = 8492854BCA1C03046F19C709EA197E26 /* Build configuration list for PBXNativeTarget "SmoothButton" */;
 			buildPhases = (
-				A3CE1D577C310126B22BAF4EE8B19D45 /* Headers */,
-				B9960833178688B0634C6B821BCF567A /* Sources */,
-				3B704166AC8B68895626310592617C9B /* Frameworks */,
-				650276E611186D39C858182C6F86FA98 /* Resources */,
+				B3E1190EC5B1F45F12F63837B75B441D /* Headers */,
+				C14FFA0E66578AFB1C8F40256BCEE281 /* Sources */,
+				1537E80B8CE582C3DD12375D818DF4AE /* Frameworks */,
+				8E7C30120F231B7920B0533E389BDCB9 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1FCC5D2AB558DECE65F64108BEC60B25 /* PBXTargetDependency */,
+			);
+			name = SmoothButton;
+			productName = SmoothButton;
+			productReference = 424D42A7457A1C22C1D3F47D9EF21082 /* SmoothButton.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3FC5A63ADC3C0566D37F1872BEFBB86C /* BButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D75776737C1633EF6172470BC101C1C6 /* Build configuration list for PBXNativeTarget "BButton" */;
+			buildPhases = (
+				AFF6D11AF614C11E09BEA58582E31708 /* Headers */,
+				2B413A66F515CB18E08234B5775F23AE /* Sources */,
+				502EB42EC103EA2A8F2A2797575AD60D /* Frameworks */,
+				5A0E246AD1A984771B104245109BCAE6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BButton;
+			productName = BButton;
+			productReference = 967294C341DF9315030BD734DDF3BBB7 /* BButton.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5BCAD4517D74F3FB3C5009C8E6DDABBD /* Pods-VaxGuideSG */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D142A4848291D561482FC0EF7A4E623A /* Build configuration list for PBXNativeTarget "Pods-VaxGuideSG" */;
+			buildPhases = (
+				93188CE87AE82B037551B1E80CCB0761 /* Headers */,
+				A28CDAEEDF8CDF427312B188E1C08CB9 /* Sources */,
+				50DB858D3A9295CC5CC08FFE9D7EEA6D /* Frameworks */,
+				13581AA7B478CE512B33103F88CD67A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				000CDF8E185C378616A5DE81E1AE384D /* PBXTargetDependency */,
+				47AC3B25022D7F4E38A708325AE8B45F /* PBXTargetDependency */,
+				9C2B6CBA7C7B3B2406555E914452E0B7 /* PBXTargetDependency */,
 			);
 			name = "Pods-VaxGuideSG";
 			productName = "Pods-VaxGuideSG";
@@ -239,7 +498,7 @@
 				LastUpgradeCheck = 1240;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -247,17 +506,26 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 9079CA694979255F851D0C00E8DF6DBE /* Products */;
+			productRefGroup = 3C7268C446E4FDB39938936D80497551 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				3FC5A63ADC3C0566D37F1872BEFBB86C /* BButton */,
 				5BCAD4517D74F3FB3C5009C8E6DDABBD /* Pods-VaxGuideSG */,
 				DFBAF98039AB4BA7927B611FB65B61BC /* SkyFloatingLabelTextField */,
+				32F7787AA30FAE05D8D80B53025BAA89 /* SmoothButton */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		13581AA7B478CE512B33103F88CD67A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		145E33802FEE2F044BC25971B397C955 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -265,21 +533,67 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		650276E611186D39C858182C6F86FA98 /* Resources */ = {
+		5A0E246AD1A984771B104245109BCAE6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6403B0D5F70C5D80D0FD6B69E29149B /* FontAwesome.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E7C30120F231B7920B0533E389BDCB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD48635606938C944A02861FD17CDBB5 /* FontAwesome.ttf in Resources */,
+				362C02DD51D9FA86F5ADE3633906F5FC /* Ionicons.ttf in Resources */,
+				B4AFDA182EE8AEB3B7902BB380834657 /* map-icons.ttf in Resources */,
+				A205114942AF1D83357DD493D6C0C070 /* MaterialIcons-Regular.ttf in Resources */,
+				453CEEE47822A61293380C15B9DEF19F /* octicons.ttf in Resources */,
+				D8C89AD1525B719FDDD8FC39947C707A /* open-iconic.ttf in Resources */,
+				436884B6E496DB9969CF399B7D10B7C0 /* SmoothButton.xib in Resources */,
+				77ABB139CDA45B4A50F65D6B4687320E /* themify.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B9960833178688B0634C6B821BCF567A /* Sources */ = {
+		2B413A66F515CB18E08234B5775F23AE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8249B91B2BE3E387D1E155BF44F72AF /* Pods-VaxGuideSG-dummy.m in Sources */,
+				58D764C5EBF11904ABF95EAE0343491E /* BButton-dummy.m in Sources */,
+				BF824AB0D605FFDDD2EC4F08500F0F62 /* BButton.m in Sources */,
+				FE2119006BA331D97AE2091E56E4CA23 /* NSString+FontAwesome.m in Sources */,
+				92ADF29B0702CC84033BB7A8B75687C8 /* UIColor+BButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A28CDAEEDF8CDF427312B188E1C08CB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA5FBAB14B16EC447BE384558F4412CA /* Pods-VaxGuideSG-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C14FFA0E66578AFB1C8F40256BCEE281 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21F540890FB78FA88968F802D63D64BA /* FontAwesome.swift in Sources */,
+				B2C9327A5CB29B9E779F5C3236AD4C0B /* FontLoader.swift in Sources */,
+				F129C8182927385DC8D67094C446ED7F /* Iconic.swift in Sources */,
+				13120C8D943C52EA79A2598772EE98B3 /* IonIcons.swift in Sources */,
+				5B08BDF68B8691F6FEB1AC0FAFF2A2D1 /* MapIcon.swift in Sources */,
+				C4DCE65C540F0F527AEDE5069BC68CCE /* MaterialIcon.swift in Sources */,
+				0985F2F7AB7CF7B0D1423894FF30EC07 /* Octicon.swift in Sources */,
+				11DCB65A6D716DC7205C4B52231C46F0 /* SmoothButton-dummy.m in Sources */,
+				C8618074D5FD374E38C57FA5F7AB31AF /* SmoothButton.swift in Sources */,
+				B462CEB00CBD652FC06DA46CC64DAD0F /* SwiftIconFont.swift in Sources */,
+				073D52B4F0BF06365DD903C8BBC6CC3D /* SwiftIconLabel.swift in Sources */,
+				0258CD3FCD5A08380C732108FACD31EC /* ThemifyIcon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,21 +611,31 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1FCC5D2AB558DECE65F64108BEC60B25 /* PBXTargetDependency */ = {
+		000CDF8E185C378616A5DE81E1AE384D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BButton;
+			target = 3FC5A63ADC3C0566D37F1872BEFBB86C /* BButton */;
+			targetProxy = AF853A8D3919582A9E6070EF34A05C4F /* PBXContainerItemProxy */;
+		};
+		47AC3B25022D7F4E38A708325AE8B45F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SkyFloatingLabelTextField;
 			target = DFBAF98039AB4BA7927B611FB65B61BC /* SkyFloatingLabelTextField */;
-			targetProxy = 7F663F7E52A93FE568BDB25C7210F875 /* PBXContainerItemProxy */;
+			targetProxy = 588B55EA05D132E753EDB98DBDC221D3 /* PBXContainerItemProxy */;
+		};
+		9C2B6CBA7C7B3B2406555E914452E0B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SmoothButton;
+			target = 32F7787AA30FAE05D8D80B53025BAA89 /* SmoothButton */;
+			targetProxy = DDD285C95EC384D0F25345006A6FB349 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		54DC2D0B7209CD881D240809D0666755 /* Release */ = {
+		0AECAFC9F3222EECDEDC8CAC29BBF6D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 03C3341B4F07C830A79A4C8E6885359C /* Pods-VaxGuideSG.release.xcconfig */;
+			baseConfigurationReference = CD21E7CAC80A6F865ECF57F3883237D7 /* BButton.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -320,23 +644,56 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-VaxGuideSG/Pods-VaxGuideSG-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/BButton/BButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BButton/BButton-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-VaxGuideSG/Pods-VaxGuideSG.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/BButton/BButton.modulemap";
+				PRODUCT_MODULE_NAME = BButton;
+				PRODUCT_NAME = BButton;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		751414E7E6AA090434756D5618B79B4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DF7533A54AA07E834EB5953083611B0 /* BButton.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BButton/BButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BButton/BButton-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/BButton/BButton.modulemap";
+				PRODUCT_MODULE_NAME = BButton;
+				PRODUCT_NAME = BButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -344,11 +701,10 @@
 			};
 			name = Release;
 		};
-		7EBD47C78573BEBBD1858F4B9910E60D /* Debug */ = {
+		79C66F888AE026677450094ADE8E2064 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DA3B07B7C055A142AF48DEBF83AB4860 /* Pods-VaxGuideSG.debug.xcconfig */;
+			baseConfigurationReference = 6630678527D7082BCA658D3FE2AE9DAD /* SmoothButton.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -358,28 +714,28 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-VaxGuideSG/Pods-VaxGuideSG-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SmoothButton/SmoothButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SmoothButton/SmoothButton-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-VaxGuideSG/Pods-VaxGuideSG.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/SmoothButton/SmoothButton.modulemap";
+				PRODUCT_MODULE_NAME = SmoothButton;
+				PRODUCT_NAME = SmoothButton;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		8DE5143C03248BB6CD542DE3963D6F3A /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -509,9 +865,46 @@
 			};
 			name = Release;
 		};
+		BA0DC65AC73242A406671FB635FF1264 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA3B07B7C055A142AF48DEBF83AB4860 /* Pods-VaxGuideSG.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-VaxGuideSG/Pods-VaxGuideSG-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VaxGuideSG/Pods-VaxGuideSG.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		C72A73618AC3FC0A48B1121A6729198D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8C719D278B58B38574C26E7C42D3C286 /* SkyFloatingLabelTextField.debug.xcconfig */;
+			baseConfigurationReference = B0AE339792754E4F290053ACBB5FCB6C /* SkyFloatingLabelTextField.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -543,9 +936,44 @@
 			};
 			name = Debug;
 		};
+		C8B5B60417481DBA43BCCE336AD99BBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 140195FA2ACE2642B1CCCAB09E43B182 /* SmoothButton.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SmoothButton/SmoothButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SmoothButton/SmoothButton-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SmoothButton/SmoothButton.modulemap";
+				PRODUCT_MODULE_NAME = SmoothButton;
+				PRODUCT_NAME = SmoothButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		D8A89E0AA26762FBA22E13150F1A0D05 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72BF52B4898258517DEF5A0A88574E56 /* SkyFloatingLabelTextField.release.xcconfig */;
+			baseConfigurationReference = 9C8F6827DE84BD65CB8A2ECDD7F6E000 /* SkyFloatingLabelTextField.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -578,6 +1006,44 @@
 			};
 			name = Release;
 		};
+		E75445E8D99D79A9CE651366E31BF82C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03C3341B4F07C830A79A4C8E6885359C /* Pods-VaxGuideSG.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-VaxGuideSG/Pods-VaxGuideSG-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VaxGuideSG/Pods-VaxGuideSG.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -590,20 +1056,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		18700D1CEC5EAA4560E540100FD66271 /* Build configuration list for PBXNativeTarget "Pods-VaxGuideSG" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7EBD47C78573BEBBD1858F4B9910E60D /* Debug */,
-				54DC2D0B7209CD881D240809D0666755 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8DE5143C03248BB6CD542DE3963D6F3A /* Debug */,
 				9E406C6AAF85E580207CD97B0044DEAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8492854BCA1C03046F19C709EA197E26 /* Build configuration list for PBXNativeTarget "SmoothButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8B5B60417481DBA43BCCE336AD99BBF /* Debug */,
+				79C66F888AE026677450094ADE8E2064 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D142A4848291D561482FC0EF7A4E623A /* Build configuration list for PBXNativeTarget "Pods-VaxGuideSG" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA0DC65AC73242A406671FB635FF1264 /* Debug */,
+				E75445E8D99D79A9CE651366E31BF82C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D75776737C1633EF6172470BC101C1C6 /* Build configuration list for PBXNativeTarget "BButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AECAFC9F3222EECDEDC8CAC29BBF6D4 /* Debug */,
+				751414E7E6AA090434756D5618B79B4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,2 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-VaxGuideSG/Pods-VaxGuideSG-frameworks.sh
+${BUILT_PRODUCTS_DIR}/BButton/BButton.framework
 ${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework
+${BUILT_PRODUCTS_DIR}/SmoothButton/SmoothButton.framework

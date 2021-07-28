@@ -10,5 +10,7 @@ import Foundation
 
 var kUSERNAME = "S12345678G"
 
+var kAPPOINTMENTLOCATION = ""
+
 //MARK: API - Appointment
-let kAPPOINTMENT = "http://demo8104044.mockable.io/appointment"
+let kAPPOINTMENT = "https://demo8104044.mockable.io/appointment"
