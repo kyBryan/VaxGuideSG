@@ -56,6 +56,7 @@ class VacTourGuideVC: UIViewController, URLServiceDelegate {
                             self.vacAddr.text = appo.location
                             kAPPOINTMENTLOCATION = appo.location
                         }
+                    
                     }
                     
                 }
@@ -77,6 +78,8 @@ class VacTourGuideVC1: UIViewController {
     
     @IBOutlet weak var vacAddrBigLbl: UILabel!
     
+    @IBOutlet weak var mapLayoutIV: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -86,5 +89,29 @@ class VacTourGuideVC1: UIViewController {
         }
         
         vacAddrBigLbl.text = kAPPOINTMENTLOCATION
+        
+        let pictureTap = UITapGestureRecognizer(target: self, action: #selector(self.imageTapped))
+        
+        mapLayoutIV.addGestureRecognizer(pictureTap)
+    }
+    
+    @IBAction func imageTapped(sender: UITapGestureRecognizer) {
+        let imageView = sender.view as! UIImageView
+        let newImageView = UIImageView(image: imageView.image)
+        newImageView.frame = UIScreen.main.bounds
+        newImageView.backgroundColor = .black
+        newImageView.contentMode = .scaleAspectFit
+        newImageView.isUserInteractionEnabled = true
+        let tap = UITapGestureRecognizer(target: self, action: #selector(self.dismissFullscreenImage))
+        newImageView.addGestureRecognizer(tap)
+        self.view.addSubview(newImageView)
+        self.navigationController?.isNavigationBarHidden = true
+        self.tabBarController?.tabBar.isHidden = true
+    }
+
+    @IBAction func dismissFullscreenImage(sender: UITapGestureRecognizer) {
+        self.navigationController?.isNavigationBarHidden = false
+        self.tabBarController?.tabBar.isHidden = false
+        sender.view?.removeFromSuperview()
     }
 }

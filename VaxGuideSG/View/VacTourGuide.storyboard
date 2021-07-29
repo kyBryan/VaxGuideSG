@@ -112,33 +112,101 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S5s-YM-fir">
-                                <rect key="frame" x="0.0" y="30" width="414" height="0.0"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S5s-YM-fir">
+                                <rect key="frame" x="0.0" y="30" width="414" height="37"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="geylangserailayout" translatesAutoresizingMaskIntoConstraints="NO" id="tu5-Wv-Utg">
+                                <rect key="frame" x="100" y="102" width="215" height="215"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="215" id="8Sk-5n-UvZ"/>
+                                    <constraint firstAttribute="width" constant="215" id="Zfb-c3-99F"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vertLineSeparator" translatesAutoresizingMaskIntoConstraints="NO" id="sPv-6S-DdT">
+                                <rect key="frame" x="543.5" y="30" width="10" height="354"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="10" id="lVE-Or-xIB"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="horiLineSeparator" translatesAutoresizingMaskIntoConstraints="NO" id="6nH-3g-r45">
+                                <rect key="frame" x="10" y="367" width="394" height="10"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="ohr-oN-QZE"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step 1. Check In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="drG-XA-obW">
+                                <rect key="frame" x="20" y="412" width="374" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Proceed to check-in with your contact tracing application." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rry-SW-965">
+                                <rect key="frame" x="20" y="461" width="374" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YlU-nt-kxC">
+                                <rect key="frame" x="321" y="757" width="73" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Proceed"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ns2-0F-MAq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Ns2-0F-MAq" firstAttribute="trailing" secondItem="S5s-YM-fir" secondAttribute="trailing" id="BTf-mS-9qb"/>
-                            <constraint firstItem="S5s-YM-fir" firstAttribute="top" secondItem="Ns2-0F-MAq" secondAttribute="top" constant="30" id="Y3L-cB-a0d"/>
-                            <constraint firstItem="S5s-YM-fir" firstAttribute="leading" secondItem="Ns2-0F-MAq" secondAttribute="leading" id="sv5-2U-TNM"/>
+                            <constraint firstItem="S5s-YM-fir" firstAttribute="leading" secondItem="Ns2-0F-MAq" secondAttribute="leading" id="4Ns-bi-BOw"/>
+                            <constraint firstItem="Ns2-0F-MAq" firstAttribute="trailing" secondItem="YlU-nt-kxC" secondAttribute="trailing" constant="20" id="5yk-CL-UMc"/>
+                            <constraint firstItem="Ns2-0F-MAq" firstAttribute="trailing" secondItem="6nH-3g-r45" secondAttribute="trailing" constant="10" id="8XB-9B-VCg"/>
+                            <constraint firstItem="drG-XA-obW" firstAttribute="top" secondItem="6nH-3g-r45" secondAttribute="bottom" constant="35" id="AbE-EZ-Wbv"/>
+                            <constraint firstItem="drG-XA-obW" firstAttribute="leading" secondItem="Ns2-0F-MAq" secondAttribute="leading" constant="20" id="Gxu-V1-vSE"/>
+                            <constraint firstItem="Rry-SW-965" firstAttribute="leading" secondItem="Ns2-0F-MAq" secondAttribute="leading" constant="20" id="H4W-XR-cvV"/>
+                            <constraint firstItem="Ns2-0F-MAq" firstAttribute="bottom" secondItem="YlU-nt-kxC" secondAttribute="bottom" constant="15" id="HbE-Gi-VCk"/>
+                            <constraint firstItem="Ns2-0F-MAq" firstAttribute="trailing" secondItem="drG-XA-obW" secondAttribute="trailing" constant="20" id="IMz-g1-0Nm"/>
+                            <constraint firstAttribute="bottom" secondItem="sPv-6S-DdT" secondAttribute="bottom" constant="30" id="Lio-eg-Xo3"/>
+                            <constraint firstItem="S5s-YM-fir" firstAttribute="top" secondItem="Ns2-0F-MAq" secondAttribute="top" constant="30" id="Loe-bG-jn6"/>
+                            <constraint firstItem="Ns2-0F-MAq" firstAttribute="trailing" secondItem="Rry-SW-965" secondAttribute="trailing" constant="20" id="MNm-tf-lAg"/>
+                            <constraint firstItem="sPv-6S-DdT" firstAttribute="top" secondItem="kXb-Zc-9Fl" secondAttribute="top" constant="30" id="N2d-bG-6ht"/>
+                            <constraint firstItem="6nH-3g-r45" firstAttribute="top" secondItem="tu5-Wv-Utg" secondAttribute="bottom" constant="50" id="Nt4-C2-6DC"/>
+                            <constraint firstItem="S5s-YM-fir" firstAttribute="trailing" secondItem="Ns2-0F-MAq" secondAttribute="trailing" id="Q3o-Uw-2Ka"/>
+                            <constraint firstItem="tu5-Wv-Utg" firstAttribute="top" secondItem="S5s-YM-fir" secondAttribute="bottom" constant="35" id="bvv-wJ-vOH"/>
+                            <constraint firstItem="sPv-6S-DdT" firstAttribute="leading" secondItem="S5s-YM-fir" secondAttribute="trailing" constant="20" id="eml-5j-zlE"/>
+                            <constraint firstItem="Rry-SW-965" firstAttribute="top" secondItem="drG-XA-obW" secondAttribute="bottom" constant="25" id="fFx-Jz-0Sl"/>
+                            <constraint firstItem="tu5-Wv-Utg" firstAttribute="leading" secondItem="Ns2-0F-MAq" secondAttribute="leading" constant="100" id="rkm-gb-tM2"/>
+                            <constraint firstItem="Ns2-0F-MAq" firstAttribute="trailing" secondItem="tu5-Wv-Utg" secondAttribute="trailing" constant="99" id="tRy-MS-AEt"/>
+                            <constraint firstItem="6nH-3g-r45" firstAttribute="leading" secondItem="Ns2-0F-MAq" secondAttribute="leading" constant="10" id="u3z-sD-mQS"/>
                         </constraints>
+                        <variation key="heightClass=compact">
+                            <mask key="subviews">
+                                <exclude reference="6nH-3g-r45"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <exclude reference="sPv-6S-DdT"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="r7T-8D-5v7"/>
                     <connections>
+                        <outlet property="mapLayoutIV" destination="tu5-Wv-Utg" id="McC-0S-pD8"/>
                         <outlet property="vacAddrBigLbl" destination="S5s-YM-fir" id="c43-hv-ukd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YDJ-JF-7u8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="764" y="-974"/>
+            <point key="canvasLocation" x="763.768115942029" y="-974.33035714285711"/>
         </scene>
     </scenes>
     <resources>
+        <image name="geylangserailayout" width="252" height="259"/>
+        <image name="horiLineSeparator" width="39763" height="257"/>
         <image name="marker" width="512" height="512"/>
+        <image name="vertLineSeparator" width="300" height="39809"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

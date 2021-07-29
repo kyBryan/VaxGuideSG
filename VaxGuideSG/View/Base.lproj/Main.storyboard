@@ -159,7 +159,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="WSE-kX-0yc">
-                        <barButtonItem key="leftBarButtonItem" title="Menu" id="WIj-pZ-jSB">
+                        <barButtonItem key="leftBarButtonItem" image="line.horizontal.3" catalog="system" id="WIj-pZ-jSB">
                             <connections>
                                 <action selector="menuTapped:" destination="BYZ-38-t0r" id="7jN-1N-qIf"/>
                             </connections>
@@ -334,6 +334,7 @@
         <image name="gearshape" catalog="system" width="128" height="121"/>
         <image name="giftcard" catalog="system" width="128" height="88"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="line.horizontal.3" catalog="system" width="128" height="64"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="power" catalog="system" width="128" height="124"/>
         <namedColor name="AccentColor">
