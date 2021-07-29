@@ -7,7 +7,6 @@
 
 import UIKit
 import SKRadioButton // for radio button
-import WebKit
 
 //MARK: Tour Guide Step 0
 class VacTourGuideVC: UIViewController, URLServiceDelegate {
@@ -50,6 +49,11 @@ class VacTourGuideVC: UIViewController, URLServiceDelegate {
             
             do {
                 let appointmentList = try JSONDecoder().decode([Appointment].self, from: dataFromServer)
+                
+                // Set for working data, incase kUSERNAME is empty
+                if kUSERNAME.isEmpty {
+                    kUSERNAME = "S12345678G"
+                }
                 
                 for appo in appointmentList {
                     
@@ -128,7 +132,6 @@ class VacTourGuideVC2: UIViewController {
     
     @IBOutlet weak var mapLayoutIV: UIImageView!
     
-    @IBOutlet var bkletLbl: UnderlinedLabel!
     
     // Radio Buttons Group
     @IBOutlet var ariSymptRBtnGrp: [SKRadioButton]!
@@ -150,10 +153,6 @@ class VacTourGuideVC2: UIViewController {
         // tapping on image and binding action to it
         let pictureTap = UITapGestureRecognizer(target: self, action: #selector(self.imageTapped))
         mapLayoutIV.addGestureRecognizer(pictureTap)
-        
-        
-        let bookletTap = UITapGestureRecognizer(target: self, action: #selector(self.openVacBooklet))
-        bkletLbl.addGestureRecognizer(bookletTap)
         
     }
     
@@ -179,28 +178,7 @@ class VacTourGuideVC2: UIViewController {
         sender.view?.removeFromSuperview()
     }
     
-    // Creating web view
-    private func createWebView(withFrame frame: CGRect) -> WKWebView? {
-        let webView = WKWebView(frame: frame)
-            webView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-            
-        if let resourceUrl = URL(string: "https://www.moh.gov.sg/docs/librariesprovider5/vaccination-matter/pfizer-vis-recipients-4-jun.pdf") {
-            let request = URLRequest(url: resourceUrl)
-            webView.load(request)
-            
-            return webView
-        }
-        
-        return nil
-    }
     
-    // Displaying the Webview
-    private func displayWebView() {
-        if let webView = self.createWebView(withFrame: self.view.bounds) {
-            self.view.addSubview(webView)
-            //self.present(webView, animated: true, completion: nil)
-        }
-    }
     
     // Radio Button Action
     @IBAction func ariSympRBtnGrpAction(_ sender: SKRadioButton) {
@@ -241,9 +219,5 @@ class VacTourGuideVC2: UIViewController {
               button.isSelected = false
         }
         sender.isSelected = true
-    }
-    
-    @IBAction func openVacBooklet(_ sender: UnderlinedLabel){
-        self.displayWebView()
     }
 }

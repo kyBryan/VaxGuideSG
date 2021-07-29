@@ -25,6 +25,7 @@
 		8A88545726B1C648008EC35A /* CoreDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A88545626B1C648008EC35A /* CoreDataModel.swift */; };
 		8A88730E26B249410027F827 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A88730D26B249410027F827 /* AccountViewController.swift */; };
 		8A88731026B249500027F827 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A88730F26B249500027F827 /* Account.storyboard */; };
+		8A9E22E426B28F7F00A00B49 /* PDFWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9E22E326B28F7F00A00B49 /* PDFWebViewController.swift */; };
 		8AA2413C26B15B310017A7B7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA2413B26B15B310017A7B7 /* LoginViewController.swift */; };
 		8AA2413E26B15C390017A7B7 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AA2413D26B15C390017A7B7 /* SignUp.storyboard */; };
 		8AA2414026B15C490017A7B7 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA2413F26B15C490017A7B7 /* SignUpViewController.swift */; };
@@ -52,6 +53,7 @@
 		8A88545626B1C648008EC35A /* CoreDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataModel.swift; sourceTree = "<group>"; };
 		8A88730D26B249410027F827 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		8A88730F26B249500027F827 /* Account.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
+		8A9E22E326B28F7F00A00B49 /* PDFWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFWebViewController.swift; sourceTree = "<group>"; };
 		8AA2413B26B15B310017A7B7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8AA2413D26B15C390017A7B7 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		8AA2413F26B15C490017A7B7 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				8AA2413B26B15B310017A7B7 /* LoginViewController.swift */,
 				8AA2413F26B15C490017A7B7 /* SignUpViewController.swift */,
 				8A88730D26B249410027F827 /* AccountViewController.swift */,
+				8A9E22E326B28F7F00A00B49 /* PDFWebViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 				8A383AA926B0FB9A009906C3 /* VaxGuideSG.xcdatamodeld in Sources */,
 				8A88545726B1C648008EC35A /* CoreDataModel.swift in Sources */,
 				8AA2413C26B15B310017A7B7 /* LoginViewController.swift in Sources */,
+				8A9E22E426B28F7F00A00B49 /* PDFWebViewController.swift in Sources */,
 				8A502EA326B1124400BF437A /* Strings.swift in Sources */,
 				8AA2414026B15C490017A7B7 /* SignUpViewController.swift in Sources */,
 				8A502EA726B149ED00BF437A /* VacTourGuideVC.swift in Sources */,

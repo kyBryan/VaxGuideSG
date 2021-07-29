@@ -612,12 +612,14 @@
                                 <viewLayoutGuide key="contentLayoutGuide" id="nw3-uR-SgZ"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="FxI-Pd-aGJ"/>
                             </scrollView>
-                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Read the Vaccine Information Booklet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EWM-9i-cuk" customClass="UnderlinedLabel" customModule="VaxGuideSG" customModuleProvider="target">
-                                <rect key="frame" x="20" y="772.5" width="285" height="20.5"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j7P-Fk-Rc6">
+                                <rect key="frame" x="20" y="760" width="285" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" systemColor="systemBlueColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <state key="normal" title="Read the Vaccine Information Booklet"/>
+                                <connections>
+                                    <segue destination="sGe-Mv-3Tx" kind="presentation" id="cYZ-Ad-3e6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Oos-7n-npw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -626,6 +628,7 @@
                             <constraint firstItem="uwL-le-BZb" firstAttribute="leading" secondItem="Oos-7n-npw" secondAttribute="leading" constant="20" id="5fM-bb-42k"/>
                             <constraint firstItem="Oos-7n-npw" firstAttribute="bottom" secondItem="9Vx-gh-4qI" secondAttribute="bottom" constant="15" id="7ke-yb-xr8"/>
                             <constraint firstItem="SoC-wt-yVc" firstAttribute="top" secondItem="Oos-7n-npw" secondAttribute="top" constant="30" id="7wR-OZ-OY5"/>
+                            <constraint firstItem="j7P-Fk-Rc6" firstAttribute="leading" secondItem="Oos-7n-npw" secondAttribute="leading" constant="20" id="CEq-fg-gVv"/>
                             <constraint firstItem="Q5m-6l-3Yu" firstAttribute="leading" secondItem="SoC-wt-yVc" secondAttribute="trailing" constant="20" id="DTk-z5-GKs"/>
                             <constraint firstItem="Oos-7n-npw" firstAttribute="trailing" secondItem="uwL-le-BZb" secondAttribute="trailing" constant="20" id="EI9-es-la8"/>
                             <constraint firstItem="Oos-7n-npw" firstAttribute="trailing" secondItem="xO3-kY-yaO" secondAttribute="trailing" constant="10" id="GUb-29-zjm"/>
@@ -637,13 +640,12 @@
                             <constraint firstItem="xO3-kY-yaO" firstAttribute="leading" secondItem="Oos-7n-npw" secondAttribute="leading" constant="10" id="SdT-tB-xHJ"/>
                             <constraint firstItem="9Vx-gh-4qI" firstAttribute="top" secondItem="AVI-XZ-J2L" secondAttribute="bottom" constant="8" id="T8x-ve-PO9"/>
                             <constraint firstItem="fw0-bM-f48" firstAttribute="top" secondItem="SoC-wt-yVc" secondAttribute="bottom" constant="35" id="W0q-Xj-mOZ"/>
+                            <constraint firstItem="Oos-7n-npw" firstAttribute="bottom" secondItem="j7P-Fk-Rc6" secondAttribute="bottom" constant="15" id="YIP-fF-j8C"/>
                             <constraint firstItem="Oos-7n-npw" firstAttribute="trailing" secondItem="fw0-bM-f48" secondAttribute="trailing" constant="99" id="cmZ-7I-5Tu"/>
-                            <constraint firstItem="Oos-7n-npw" firstAttribute="bottom" secondItem="EWM-9i-cuk" secondAttribute="bottom" constant="15" id="j3r-FC-XWr"/>
                             <constraint firstItem="Oos-7n-npw" firstAttribute="trailing" secondItem="9Vx-gh-4qI" secondAttribute="trailing" constant="20" id="kcc-1g-tNg"/>
                             <constraint firstItem="SoC-wt-yVc" firstAttribute="trailing" secondItem="Oos-7n-npw" secondAttribute="trailing" id="kn2-4G-ati"/>
                             <constraint firstItem="AVI-XZ-J2L" firstAttribute="leading" secondItem="Oos-7n-npw" secondAttribute="leading" constant="20" id="rJP-UA-F2Y"/>
                             <constraint firstItem="AVI-XZ-J2L" firstAttribute="top" secondItem="uwL-le-BZb" secondAttribute="bottom" constant="20" id="rsc-kO-D4k"/>
-                            <constraint firstItem="EWM-9i-cuk" firstAttribute="leading" secondItem="Oos-7n-npw" secondAttribute="leading" constant="20" id="uLV-Z4-QS8"/>
                             <constraint firstItem="xO3-kY-yaO" firstAttribute="top" secondItem="fw0-bM-f48" secondAttribute="bottom" constant="50" id="xGb-zp-Emx"/>
                         </constraints>
                         <variation key="heightClass=compact">
@@ -659,7 +661,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="jTJ-gL-fCP"/>
                     <connections>
-                        <outlet property="bkletLbl" destination="EWM-9i-cuk" id="tnc-9t-1Zz"/>
                         <outlet property="mapLayoutIV" destination="fw0-bM-f48" id="oB6-SN-3Yn"/>
                         <outlet property="vacAddrBigLbl" destination="SoC-wt-yVc" id="sjw-pg-hju"/>
                         <outletCollection property="vacTakenRBtnGrp" destination="vbE-Kg-hAS" collectionClass="NSMutableArray" id="hqN-Gn-Ato"/>
@@ -677,6 +678,46 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Stx-Dl-9qE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1734.7826086956522" y="-974.33035714285711"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="eze-Os-PJn">
+            <objects>
+                <viewController id="sGe-Mv-3Tx" customClass="PDFWebViewController" customModule="VaxGuideSG" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qMa-rV-gjg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Laz-8P-rcS">
+                                <rect key="frame" x="20" y="20" width="43" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Close"/>
+                                <connections>
+                                    <action selector="closeWebView:" destination="sGe-Mv-3Tx" eventType="touchUpInside" id="vJG-gH-hFf"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oIg-S8-5VT">
+                                <rect key="frame" x="0.0" y="58" width="414" height="784"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="U4b-F6-r0p"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="oIg-S8-5VT" firstAttribute="trailing" secondItem="U4b-F6-r0p" secondAttribute="trailing" id="5Or-8G-0Vw"/>
+                            <constraint firstAttribute="bottom" secondItem="oIg-S8-5VT" secondAttribute="bottom" id="UoQ-Lp-7tZ"/>
+                            <constraint firstItem="oIg-S8-5VT" firstAttribute="top" secondItem="Laz-8P-rcS" secondAttribute="bottom" constant="5" id="cW1-d1-nLT"/>
+                            <constraint firstItem="oIg-S8-5VT" firstAttribute="leading" secondItem="U4b-F6-r0p" secondAttribute="leading" id="nAY-NS-ag3"/>
+                            <constraint firstItem="Laz-8P-rcS" firstAttribute="top" secondItem="U4b-F6-r0p" secondAttribute="top" constant="20" id="pjj-wE-9hs"/>
+                            <constraint firstItem="Laz-8P-rcS" firstAttribute="leading" secondItem="U4b-F6-r0p" secondAttribute="leading" constant="20" id="ydw-Xs-LYU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pdfContainerView" destination="oIg-S8-5VT" id="Keo-B0-Jtr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qeR-xM-Pbl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1734.7826086956522" y="-226.33928571428569"/>
         </scene>
     </scenes>
     <designables>
@@ -718,9 +759,6 @@
         <image name="vertLineSeparator" width="300" height="39809"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
