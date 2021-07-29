@@ -83,7 +83,7 @@
                                     <constraint firstAttribute="width" secondItem="R5G-31-bdu" secondAttribute="height" multiplier="11:1" id="lLb-fH-Rma"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
@@ -143,7 +143,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="appLogo" width="1206" height="1202"/>
+        <image name="appLogo" width="1160" height="1162"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

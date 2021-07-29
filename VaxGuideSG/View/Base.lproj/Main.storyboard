@@ -249,7 +249,7 @@
                                 </state>
                                 <connections>
                                     <action selector="loginButton:" destination="jSM-Sh-h8t" eventType="touchUpInside" id="AAG-Ku-TeV"/>
-                                    <segue destination="P0R-Rw-fyt" kind="presentation" modalPresentationStyle="fullScreen" id="vW4-Zn-M9p"/>
+                                    <segue destination="P0R-Rw-fyt" kind="presentation" identifier="logintohome" modalPresentationStyle="fullScreen" id="vW4-Zn-M9p"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Br-pH-h08">
