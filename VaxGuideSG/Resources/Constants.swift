@@ -8,7 +8,11 @@
 import Foundation
 
 
-var kUSERNAME = "S12345678G"
+var kUSERNAME = ""
+var kFULLNAME = ""
+var kEMAIL = ""
+var kPHONE = ""
+var kPASSWORD = ""
 
 var kAPPOINTMENTLOCATION = ""
 

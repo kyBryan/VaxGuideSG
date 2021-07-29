@@ -57,6 +57,12 @@ class LoginViewController: UIViewController {
                 print(users[i].nric!)
                 print(users[i].password!)
                 
+                kUSERNAME = users[i].nric!
+                kEMAIL = users[i].email!
+                kPHONE = users[i].phone!
+                kFULLNAME = users[i].fullname!
+                kPASSWORD = users[i].password!
+                
                 if usernameLabel.text! == users[i].nric! && passwordLabel.text! == users[i].password! {
                     title = "Account exist"
                     msg = "Yey"
