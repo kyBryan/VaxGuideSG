@@ -39,6 +39,9 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                 <state key="normal" title="Name"/>
+                                                <connections>
+                                                    <segue destination="ndf-PL-Snk" kind="show" id="Eb6-AQ-oIb"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -194,6 +197,7 @@
                     <connections>
                         <outlet property="homeView" destination="wrf-84-ehX" id="jgw-36-SFU"/>
                         <outlet property="leading" destination="goA-ik-4Af" id="izb-hI-s8c"/>
+                        <outlet property="nameLabelBtn" destination="w5A-Ck-BBs" id="U5m-bt-Bih"/>
                         <outlet property="trailing" destination="Si4-wd-fbl" id="S0L-HO-f4f"/>
                     </connections>
                 </viewController>
@@ -209,7 +213,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3KW-8H-DqL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2072" y="22"/>
+            <point key="canvasLocation" x="2045" y="179"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="A41-hY-FJH">
@@ -344,6 +348,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jib-6h-cIa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="730" y="-685"/>
+        </scene>
+        <!--Account-->
+        <scene sceneID="ikT-hA-9Mz">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Account" id="ndf-PL-Snk" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ZoT-hR-MjC"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sQA-3F-mrF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2020" y="-386"/>
         </scene>
     </scenes>
     <resources>

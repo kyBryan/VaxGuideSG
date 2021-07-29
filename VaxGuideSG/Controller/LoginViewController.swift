@@ -63,9 +63,13 @@ class LoginViewController: UIViewController {
                 kFULLNAME = users[i].fullname!
                 kPASSWORD = users[i].password!
                 
+                
                 if usernameLabel.text! == users[i].nric! && passwordLabel.text! == users[i].password! {
                     title = "Account exist"
                     msg = "Yey"
+                    
+                    let defaults = UserDefaults.standard
+                    defaults.setValue(users[i].nric, forKey:"nric")
                     
                     performSegue(withIdentifier: "logintohome", sender: self)
                     break
