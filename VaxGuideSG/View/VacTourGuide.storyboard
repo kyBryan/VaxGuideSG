@@ -154,6 +154,9 @@
                                 <rect key="frame" x="321" y="757" width="73" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Proceed"/>
+                                <connections>
+                                    <segue destination="R9b-BS-XcT" kind="show" id="d6c-ei-KdO"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ns2-0F-MAq"/>
@@ -201,7 +204,513 @@
             </objects>
             <point key="canvasLocation" x="763.768115942029" y="-974.33035714285711"/>
         </scene>
+        <!--Vac Tour GuideVC2-->
+        <scene sceneID="3NP-kA-h0N">
+            <objects>
+                <viewController id="R9b-BS-XcT" customClass="VacTourGuideVC2" customModule="VaxGuideSG" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0zz-g5-5Xh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SoC-wt-yVc">
+                                <rect key="frame" x="0.0" y="30" width="414" height="37"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="geylangserailayout" translatesAutoresizingMaskIntoConstraints="NO" id="fw0-bM-f48">
+                                <rect key="frame" x="100" y="102" width="215" height="215"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="215" id="oyQ-k4-A0r"/>
+                                    <constraint firstAttribute="width" constant="215" id="uQ0-Wz-XC6"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vertLineSeparator" translatesAutoresizingMaskIntoConstraints="NO" id="Q5m-6l-3Yu">
+                                <rect key="frame" x="543.5" y="30" width="10" height="354"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="10" id="6AZ-dF-57b"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="horiLineSeparator" translatesAutoresizingMaskIntoConstraints="NO" id="xO3-kY-yaO">
+                                <rect key="frame" x="10" y="367" width="394" height="10"/>
+                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="Zol-pr-vrA"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step 2. Health Declaration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uwL-le-BZb">
+                                <rect key="frame" x="20" y="412" width="374" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Vx-gh-4qI">
+                                <rect key="frame" x="321" y="757" width="73" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Proceed"/>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AVI-XZ-J2L">
+                                <rect key="frame" x="20" y="456" width="374" height="293"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Qq-Y7-vbl" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="393"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Acute Respiratory Infection Symptoms?" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6xE-t7-3vT">
+                                                <rect key="frame" x="2" y="5" width="370" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fever last 24 hours?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9DP-hl-LA0">
+                                                <rect key="frame" x="2" y="74.5" width="370" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vaccine taken in the last 14 days?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tzp-5k-hK2">
+                                                <rect key="frame" x="2" y="144" width="370" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drug Allergies?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hq0-qD-X3v">
+                                                <rect key="frame" x="2" y="213.5" width="370" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Xj2-yD-yhx">
+                                                <rect key="frame" x="2" y="30.5" width="370" height="34"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gm7-nt-cv6" userLabel="RadioBtnYes" customClass="SKRadioButton" customModule="SKRadioButton">
+                                                        <rect key="frame" x="0.0" y="0.0" width="175" height="34"/>
+                                                        <state key="normal">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Yes"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="marginWidth">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="iconSize">
+                                                                <real key="value" value="25"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
+                                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="numberOfLines">
+                                                                <integer key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="titleTextColor">
+                                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="ariSympRBtnGrpAction:" destination="R9b-BS-XcT" eventType="touchUpInside" id="6uC-z8-zWO"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sxw-LW-IXI" userLabel="RadioBtnNo" customClass="SKRadioButton" customModule="SKRadioButton">
+                                                        <rect key="frame" x="195" y="0.0" width="175" height="34"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
+                                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="marginWidth">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="iconSize">
+                                                                <real key="value" value="25"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="numberOfLines">
+                                                                <integer key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="titleTextColor">
+                                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="No"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="ariSympRBtnGrpAction:" destination="R9b-BS-XcT" eventType="touchUpInside" id="2NZ-m3-pJV"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="oeB-Tu-DNW">
+                                                <rect key="frame" x="2" y="100" width="370" height="34"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2LX-5B-lzx" userLabel="RadioBtnYes" customClass="SKRadioButton" customModule="SKRadioButton">
+                                                        <rect key="frame" x="0.0" y="0.0" width="175" height="34"/>
+                                                        <state key="normal">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Yes"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="marginWidth">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="iconSize">
+                                                                <real key="value" value="25"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
+                                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="numberOfLines">
+                                                                <integer key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="titleTextColor">
+                                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="feverBtnGrpAction:" destination="R9b-BS-XcT" eventType="touchUpInside" id="Vqy-fO-J1d"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Rb-vj-inp" userLabel="RadioBtnNo" customClass="SKRadioButton" customModule="SKRadioButton">
+                                                        <rect key="frame" x="195" y="0.0" width="175" height="34"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
+                                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="marginWidth">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="iconSize">
+                                                                <real key="value" value="25"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="numberOfLines">
+                                                                <integer key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="titleTextColor">
+                                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="No"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="feverBtnGrpAction:" destination="R9b-BS-XcT" eventType="touchUpInside" id="jjb-1p-Qae"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="DNR-N6-Uba">
+                                                <rect key="frame" x="2" y="169.5" width="370" height="34"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vbE-Kg-hAS" userLabel="RadioBtnYes" customClass="SKRadioButton" customModule="SKRadioButton">
+                                                        <rect key="frame" x="0.0" y="0.0" width="175" height="34"/>
+                                                        <state key="normal">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Yes"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="marginWidth">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="iconSize">
+                                                                <real key="value" value="25"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
+                                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="numberOfLines">
+                                                                <integer key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="titleTextColor">
+                                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="vacTakenBtnGrpAction:" destination="R9b-BS-XcT" eventType="touchUpInside" id="gEd-1u-nhF"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QJB-4c-zlc" userLabel="RadioBtnNo" customClass="SKRadioButton" customModule="SKRadioButton">
+                                                        <rect key="frame" x="195" y="0.0" width="175" height="34"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
+                                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="marginWidth">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="iconSize">
+                                                                <real key="value" value="25"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="numberOfLines">
+                                                                <integer key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="titleTextColor">
+                                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="No"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="vacTakenBtnGrpAction:" destination="R9b-BS-XcT" eventType="touchUpInside" id="e6k-YA-moP"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="g3N-iL-1Om">
+                                                <rect key="frame" x="2" y="239" width="370" height="34"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Id-pi-dLM" userLabel="RadioBtnYes" customClass="SKRadioButton" customModule="SKRadioButton">
+                                                        <rect key="frame" x="0.0" y="0.0" width="175" height="34"/>
+                                                        <state key="normal">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Yes"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="marginWidth">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="iconSize">
+                                                                <real key="value" value="25"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
+                                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="numberOfLines">
+                                                                <integer key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="titleTextColor">
+                                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="drugAllergyBtnGrpAction:" destination="R9b-BS-XcT" eventType="touchUpInside" id="UCc-Yw-dab"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="juG-61-NTr" userLabel="RadioBtnNo" customClass="SKRadioButton" customModule="SKRadioButton">
+                                                        <rect key="frame" x="195" y="0.0" width="175" height="34"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
+                                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="marginWidth">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="iconSize">
+                                                                <real key="value" value="25"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="numberOfLines">
+                                                                <integer key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="titleTextColor">
+                                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="No"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="drugAllergyBtnGrpAction:" destination="R9b-BS-XcT" eventType="touchUpInside" id="3UM-bR-opz"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tested Covid (+) before?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IbZ-Vi-AB3">
+                                                <rect key="frame" x="2" y="283" width="370" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="l0b-kA-eCp">
+                                                <rect key="frame" x="2" y="308.5" width="370" height="34"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eDy-eK-go9" userLabel="RadioBtnYes" customClass="SKRadioButton" customModule="SKRadioButton">
+                                                        <rect key="frame" x="0.0" y="0.0" width="175" height="34"/>
+                                                        <state key="normal">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Yes"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="marginWidth">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="iconSize">
+                                                                <real key="value" value="25"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
+                                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="numberOfLines">
+                                                                <integer key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="titleTextColor">
+                                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="testPosBtnGrpAction:" destination="R9b-BS-XcT" eventType="touchUpInside" id="ZSn-7k-mhy"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="coN-vL-EJS" userLabel="RadioBtnNo" customClass="SKRadioButton" customModule="SKRadioButton">
+                                                        <rect key="frame" x="195" y="0.0" width="175" height="34"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
+                                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="marginWidth">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="iconSize">
+                                                                <real key="value" value="25"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="numberOfLines">
+                                                                <integer key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="titleTextColor">
+                                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="No"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="testPosBtnGrpAction:" destination="R9b-BS-XcT" eventType="touchUpInside" id="jcr-kz-oRj"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="9DP-hl-LA0" secondAttribute="trailing" constant="2" id="1gY-sj-508"/>
+                                            <constraint firstItem="IbZ-Vi-AB3" firstAttribute="top" secondItem="g3N-iL-1Om" secondAttribute="bottom" constant="10" id="2KW-DI-uNm"/>
+                                            <constraint firstItem="l0b-kA-eCp" firstAttribute="top" secondItem="IbZ-Vi-AB3" secondAttribute="bottom" constant="5" id="5Zm-as-mWb"/>
+                                            <constraint firstAttribute="trailing" secondItem="Hq0-qD-X3v" secondAttribute="trailing" constant="2" id="6Aw-ae-UnA"/>
+                                            <constraint firstItem="tzp-5k-hK2" firstAttribute="leading" secondItem="5Qq-Y7-vbl" secondAttribute="leading" constant="2" id="9fv-gE-fil"/>
+                                            <constraint firstAttribute="trailing" secondItem="6xE-t7-3vT" secondAttribute="trailing" constant="2" id="CjH-By-xPL"/>
+                                            <constraint firstItem="Xj2-yD-yhx" firstAttribute="top" secondItem="6xE-t7-3vT" secondAttribute="bottom" constant="5" id="FAL-Pq-NaB"/>
+                                            <constraint firstItem="Hq0-qD-X3v" firstAttribute="top" secondItem="DNR-N6-Uba" secondAttribute="bottom" constant="10" id="Geu-YZ-JSi"/>
+                                            <constraint firstItem="Hq0-qD-X3v" firstAttribute="leading" secondItem="5Qq-Y7-vbl" secondAttribute="leading" constant="2" id="In8-Fa-err"/>
+                                            <constraint firstItem="oeB-Tu-DNW" firstAttribute="leading" secondItem="5Qq-Y7-vbl" secondAttribute="leading" constant="2" id="Kvh-Tf-lYV"/>
+                                            <constraint firstItem="DNR-N6-Uba" firstAttribute="leading" secondItem="5Qq-Y7-vbl" secondAttribute="leading" constant="2" id="M2g-Yo-9w0"/>
+                                            <constraint firstItem="6xE-t7-3vT" firstAttribute="top" secondItem="5Qq-Y7-vbl" secondAttribute="top" constant="5" id="MVO-Zj-qS9"/>
+                                            <constraint firstAttribute="trailing" secondItem="DNR-N6-Uba" secondAttribute="trailing" constant="2" id="Me8-pU-Mgm"/>
+                                            <constraint firstItem="g3N-iL-1Om" firstAttribute="leading" secondItem="5Qq-Y7-vbl" secondAttribute="leading" constant="2" id="N0c-Gy-Dvf"/>
+                                            <constraint firstItem="9DP-hl-LA0" firstAttribute="leading" secondItem="5Qq-Y7-vbl" secondAttribute="leading" constant="2" id="Skv-Ge-YIl"/>
+                                            <constraint firstItem="oeB-Tu-DNW" firstAttribute="top" secondItem="9DP-hl-LA0" secondAttribute="bottom" constant="5" id="SnX-Dx-JG7"/>
+                                            <constraint firstAttribute="trailing" secondItem="g3N-iL-1Om" secondAttribute="trailing" constant="2" id="UbX-xS-SQi"/>
+                                            <constraint firstItem="9DP-hl-LA0" firstAttribute="top" secondItem="Xj2-yD-yhx" secondAttribute="bottom" constant="10" id="VMk-Bt-e5z"/>
+                                            <constraint firstAttribute="trailing" secondItem="l0b-kA-eCp" secondAttribute="trailing" constant="2" id="aS7-HT-JgF"/>
+                                            <constraint firstItem="l0b-kA-eCp" firstAttribute="leading" secondItem="5Qq-Y7-vbl" secondAttribute="leading" constant="2" id="c9G-qW-BHP"/>
+                                            <constraint firstItem="IbZ-Vi-AB3" firstAttribute="leading" secondItem="5Qq-Y7-vbl" secondAttribute="leading" constant="2" id="eQD-M1-4fi"/>
+                                            <constraint firstAttribute="trailing" secondItem="IbZ-Vi-AB3" secondAttribute="trailing" constant="2" id="iKT-Im-Zuz"/>
+                                            <constraint firstItem="g3N-iL-1Om" firstAttribute="top" secondItem="Hq0-qD-X3v" secondAttribute="bottom" constant="5" id="ihf-nZ-AuH"/>
+                                            <constraint firstItem="Xj2-yD-yhx" firstAttribute="leading" secondItem="5Qq-Y7-vbl" secondAttribute="leading" constant="2" id="p52-tH-hGf"/>
+                                            <constraint firstAttribute="trailing" secondItem="oeB-Tu-DNW" secondAttribute="trailing" constant="2" id="sS5-df-hVl"/>
+                                            <constraint firstItem="tzp-5k-hK2" firstAttribute="top" secondItem="oeB-Tu-DNW" secondAttribute="bottom" constant="10" id="tQX-6b-hhf"/>
+                                            <constraint firstAttribute="trailing" secondItem="tzp-5k-hK2" secondAttribute="trailing" constant="2" id="umz-kh-6d0"/>
+                                            <constraint firstItem="6xE-t7-3vT" firstAttribute="leading" secondItem="5Qq-Y7-vbl" secondAttribute="leading" constant="2" id="vDE-D1-xpP"/>
+                                            <constraint firstItem="DNR-N6-Uba" firstAttribute="top" secondItem="tzp-5k-hK2" secondAttribute="bottom" constant="5" id="vHz-HE-4so"/>
+                                            <constraint firstAttribute="trailing" secondItem="Xj2-yD-yhx" secondAttribute="trailing" constant="2" id="xQl-4Y-TJA"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="5Qq-Y7-vbl" firstAttribute="height" secondItem="AVI-XZ-J2L" secondAttribute="height" priority="250" constant="100" id="4yr-eh-aDr"/>
+                                    <constraint firstAttribute="trailing" secondItem="5Qq-Y7-vbl" secondAttribute="trailing" id="9CA-YO-bvr"/>
+                                    <constraint firstItem="5Qq-Y7-vbl" firstAttribute="width" secondItem="AVI-XZ-J2L" secondAttribute="width" id="BOa-ke-ZBh"/>
+                                    <constraint firstItem="5Qq-Y7-vbl" firstAttribute="leading" secondItem="AVI-XZ-J2L" secondAttribute="leading" id="G2p-Ax-LZx"/>
+                                    <constraint firstItem="5Qq-Y7-vbl" firstAttribute="top" secondItem="AVI-XZ-J2L" secondAttribute="top" id="XUp-CU-S5g"/>
+                                    <constraint firstAttribute="bottom" secondItem="5Qq-Y7-vbl" secondAttribute="bottom" id="lzu-qx-GxZ"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="nw3-uR-SgZ"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="FxI-Pd-aGJ"/>
+                            </scrollView>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Read the Vaccine Information Booklet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EWM-9i-cuk" customClass="UnderlinedLabel" customModule="VaxGuideSG" customModuleProvider="target">
+                                <rect key="frame" x="20" y="772.5" width="285" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemBlueColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Oos-7n-npw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SoC-wt-yVc" firstAttribute="leading" secondItem="Oos-7n-npw" secondAttribute="leading" id="52U-7t-RlZ"/>
+                            <constraint firstItem="uwL-le-BZb" firstAttribute="leading" secondItem="Oos-7n-npw" secondAttribute="leading" constant="20" id="5fM-bb-42k"/>
+                            <constraint firstItem="Oos-7n-npw" firstAttribute="bottom" secondItem="9Vx-gh-4qI" secondAttribute="bottom" constant="15" id="7ke-yb-xr8"/>
+                            <constraint firstItem="SoC-wt-yVc" firstAttribute="top" secondItem="Oos-7n-npw" secondAttribute="top" constant="30" id="7wR-OZ-OY5"/>
+                            <constraint firstItem="Q5m-6l-3Yu" firstAttribute="leading" secondItem="SoC-wt-yVc" secondAttribute="trailing" constant="20" id="DTk-z5-GKs"/>
+                            <constraint firstItem="Oos-7n-npw" firstAttribute="trailing" secondItem="uwL-le-BZb" secondAttribute="trailing" constant="20" id="EI9-es-la8"/>
+                            <constraint firstItem="Oos-7n-npw" firstAttribute="trailing" secondItem="xO3-kY-yaO" secondAttribute="trailing" constant="10" id="GUb-29-zjm"/>
+                            <constraint firstItem="fw0-bM-f48" firstAttribute="leading" secondItem="Oos-7n-npw" secondAttribute="leading" constant="100" id="HhK-Hj-BzW"/>
+                            <constraint firstItem="uwL-le-BZb" firstAttribute="top" secondItem="xO3-kY-yaO" secondAttribute="bottom" constant="35" id="Jr1-mV-Qms"/>
+                            <constraint firstItem="Oos-7n-npw" firstAttribute="trailing" secondItem="AVI-XZ-J2L" secondAttribute="trailing" constant="20" id="LXV-EI-gpa"/>
+                            <constraint firstAttribute="bottom" secondItem="Q5m-6l-3Yu" secondAttribute="bottom" constant="30" id="Mob-Ya-EjM"/>
+                            <constraint firstItem="Q5m-6l-3Yu" firstAttribute="top" secondItem="0zz-g5-5Xh" secondAttribute="top" constant="30" id="Ncb-Kz-b83"/>
+                            <constraint firstItem="xO3-kY-yaO" firstAttribute="leading" secondItem="Oos-7n-npw" secondAttribute="leading" constant="10" id="SdT-tB-xHJ"/>
+                            <constraint firstItem="9Vx-gh-4qI" firstAttribute="top" secondItem="AVI-XZ-J2L" secondAttribute="bottom" constant="8" id="T8x-ve-PO9"/>
+                            <constraint firstItem="fw0-bM-f48" firstAttribute="top" secondItem="SoC-wt-yVc" secondAttribute="bottom" constant="35" id="W0q-Xj-mOZ"/>
+                            <constraint firstItem="Oos-7n-npw" firstAttribute="trailing" secondItem="fw0-bM-f48" secondAttribute="trailing" constant="99" id="cmZ-7I-5Tu"/>
+                            <constraint firstItem="Oos-7n-npw" firstAttribute="bottom" secondItem="EWM-9i-cuk" secondAttribute="bottom" constant="15" id="j3r-FC-XWr"/>
+                            <constraint firstItem="Oos-7n-npw" firstAttribute="trailing" secondItem="9Vx-gh-4qI" secondAttribute="trailing" constant="20" id="kcc-1g-tNg"/>
+                            <constraint firstItem="SoC-wt-yVc" firstAttribute="trailing" secondItem="Oos-7n-npw" secondAttribute="trailing" id="kn2-4G-ati"/>
+                            <constraint firstItem="AVI-XZ-J2L" firstAttribute="leading" secondItem="Oos-7n-npw" secondAttribute="leading" constant="20" id="rJP-UA-F2Y"/>
+                            <constraint firstItem="AVI-XZ-J2L" firstAttribute="top" secondItem="uwL-le-BZb" secondAttribute="bottom" constant="20" id="rsc-kO-D4k"/>
+                            <constraint firstItem="EWM-9i-cuk" firstAttribute="leading" secondItem="Oos-7n-npw" secondAttribute="leading" constant="20" id="uLV-Z4-QS8"/>
+                            <constraint firstItem="xO3-kY-yaO" firstAttribute="top" secondItem="fw0-bM-f48" secondAttribute="bottom" constant="50" id="xGb-zp-Emx"/>
+                        </constraints>
+                        <variation key="heightClass=compact">
+                            <mask key="subviews">
+                                <exclude reference="xO3-kY-yaO"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <exclude reference="Q5m-6l-3Yu"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="jTJ-gL-fCP"/>
+                    <connections>
+                        <outlet property="bkletLbl" destination="EWM-9i-cuk" id="tnc-9t-1Zz"/>
+                        <outlet property="mapLayoutIV" destination="fw0-bM-f48" id="oB6-SN-3Yn"/>
+                        <outlet property="vacAddrBigLbl" destination="SoC-wt-yVc" id="sjw-pg-hju"/>
+                        <outletCollection property="vacTakenRBtnGrp" destination="vbE-Kg-hAS" collectionClass="NSMutableArray" id="hqN-Gn-Ato"/>
+                        <outletCollection property="vacTakenRBtnGrp" destination="QJB-4c-zlc" collectionClass="NSMutableArray" id="SxQ-I0-OqS"/>
+                        <outletCollection property="ariSymptRBtnGrp" destination="Gm7-nt-cv6" collectionClass="NSMutableArray" id="o8P-fC-Tsg"/>
+                        <outletCollection property="ariSymptRBtnGrp" destination="sxw-LW-IXI" collectionClass="NSMutableArray" id="vxJ-mt-YAm"/>
+                        <outletCollection property="feverRBtnGrp" destination="2LX-5B-lzx" collectionClass="NSMutableArray" id="Tou-2r-tS6"/>
+                        <outletCollection property="feverRBtnGrp" destination="9Rb-vj-inp" collectionClass="NSMutableArray" id="HMg-sH-Jbm"/>
+                        <outletCollection property="drugAllergyRBtnGrp" destination="juG-61-NTr" collectionClass="NSMutableArray" id="dsT-oW-LlI"/>
+                        <outletCollection property="drugAllergyRBtnGrp" destination="5Id-pi-dLM" collectionClass="NSMutableArray" id="wPa-W4-cQT"/>
+                        <outletCollection property="testPosRBtnGrp" destination="eDy-eK-go9" collectionClass="NSMutableArray" id="Zjf-vH-hAH"/>
+                        <outletCollection property="testPosRBtnGrp" destination="coN-vL-EJS" collectionClass="NSMutableArray" id="GDU-WU-bVS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Stx-Dl-9qE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1734.7826086956522" y="-974.33035714285711"/>
+        </scene>
     </scenes>
+    <designables>
+        <designable name="2LX-5B-lzx">
+            <size key="intrinsicContentSize" width="30" height="34"/>
+        </designable>
+        <designable name="5Id-pi-dLM">
+            <size key="intrinsicContentSize" width="30" height="34"/>
+        </designable>
+        <designable name="9Rb-vj-inp">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+        <designable name="Gm7-nt-cv6">
+            <size key="intrinsicContentSize" width="30" height="34"/>
+        </designable>
+        <designable name="QJB-4c-zlc">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+        <designable name="coN-vL-EJS">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+        <designable name="eDy-eK-go9">
+            <size key="intrinsicContentSize" width="30" height="34"/>
+        </designable>
+        <designable name="juG-61-NTr">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+        <designable name="sxw-LW-IXI">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+        <designable name="vbE-Kg-hAS">
+            <size key="intrinsicContentSize" width="30" height="34"/>
+        </designable>
+    </designables>
     <resources>
         <image name="geylangserailayout" width="252" height="259"/>
         <image name="horiLineSeparator" width="39763" height="257"/>
@@ -209,6 +718,9 @@
         <image name="vertLineSeparator" width="300" height="39809"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

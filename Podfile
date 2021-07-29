@@ -6,6 +6,7 @@ target 'VaxGuideSG' do
   use_frameworks!
   
   pod 'SkyFloatingLabelTextField', '~> 3.0'
+  pod 'SKRadioButton'
   
   # Pods for VaxGuideSG
 

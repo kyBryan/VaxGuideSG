@@ -1,16 +1,20 @@
 PODS:
+  - SKRadioButton (1.0.3)
   - SkyFloatingLabelTextField (3.8.0)
 
 DEPENDENCIES:
+  - SKRadioButton
   - SkyFloatingLabelTextField (~> 3.0)
 
 SPEC REPOS:
   trunk:
+    - SKRadioButton
     - SkyFloatingLabelTextField
 
 SPEC CHECKSUMS:
+  SKRadioButton: fe55bd1f46302f9acbdf788021085b35a4a43b79
   SkyFloatingLabelTextField: 5a338412114808e961fe2d14ea2c5452c8b6e4aa
 
-PODFILE CHECKSUM: a0b009383183e54fdeb8d13f27e0d8c92e912d7e
+PODFILE CHECKSUM: d1c0de5cfc8c10604d8492eed2f637bc4f1b273f
 
 COCOAPODS: 1.10.1
