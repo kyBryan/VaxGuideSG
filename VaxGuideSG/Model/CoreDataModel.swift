@@ -28,6 +28,9 @@ class CoreDataModel {
         
         do {
             try context.save()
+            DispatchQueue.main.async {
+                self.fetchAllUsers()
+            }
             
         } catch {
             print("Error in addNewUser: \(error.localizedDescription)")
@@ -45,24 +48,25 @@ class CoreDataModel {
         }
         
         return users
-
+        
     }
     
-    func updateUser(user: Users, email: String, fullname: String, nric: String, phone: String){
+    func updateUser(user: Users, email: String, fullname: String, nric: String, password: String, phone: String){
         user.email = email
         user.fullname = fullname
         user.nric = nric
+        user.password = password
         user.phone = phone
         
         do {
             try context.save()
-
+            DispatchQueue.main.async {
+                self.fetchAllUsers()
+            }
+            
         } catch {
             
         }
-        
     }
-    
-    
 }
 
