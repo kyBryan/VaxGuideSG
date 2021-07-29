@@ -27,6 +27,7 @@
 		8A88731026B249500027F827 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A88730F26B249500027F827 /* Account.storyboard */; };
 		8A9E22E426B28F7F00A00B49 /* PDFWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9E22E326B28F7F00A00B49 /* PDFWebViewController.swift */; };
 		8A9E22E626B2AAEC00A00B49 /* AppointmentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9E22E526B2AAEC00A00B49 /* AppointmentVC.swift */; };
+		8A9E22E926B2B08400A00B49 /* Appointment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A9E22E826B2B08400A00B49 /* Appointment.storyboard */; };
 		8AA2413C26B15B310017A7B7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA2413B26B15B310017A7B7 /* LoginViewController.swift */; };
 		8AA2413E26B15C390017A7B7 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AA2413D26B15C390017A7B7 /* SignUp.storyboard */; };
 		8AA2414026B15C490017A7B7 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA2413F26B15C490017A7B7 /* SignUpViewController.swift */; };
@@ -56,6 +57,7 @@
 		8A88730F26B249500027F827 /* Account.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
 		8A9E22E326B28F7F00A00B49 /* PDFWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFWebViewController.swift; sourceTree = "<group>"; };
 		8A9E22E526B2AAEC00A00B49 /* AppointmentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentVC.swift; sourceTree = "<group>"; };
+		8A9E22E826B2B08400A00B49 /* Appointment.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Appointment.storyboard; sourceTree = "<group>"; };
 		8AA2413B26B15B310017A7B7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8AA2413D26B15C390017A7B7 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		8AA2413F26B15C490017A7B7 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 				8A502EA426B1499800BF437A /* VacTourGuide.storyboard */,
 				8AA2413D26B15C390017A7B7 /* SignUp.storyboard */,
 				8A88730F26B249500027F827 /* Account.storyboard */,
+				8A9E22E826B2B08400A00B49 /* Appointment.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 				8A502EA526B1499800BF437A /* VacTourGuide.storyboard in Resources */,
 				8A383AAE26B0FB9B009906C3 /* LaunchScreen.storyboard in Resources */,
 				8A383AAB26B0FB9B009906C3 /* Assets.xcassets in Resources */,
+				8A9E22E926B2B08400A00B49 /* Appointment.storyboard in Resources */,
 				8A383AA626B0FB9A009906C3 /* Main.storyboard in Resources */,
 				8A88731026B249500027F827 /* Account.storyboard in Resources */,
 				8AA2413E26B15C390017A7B7 /* SignUp.storyboard in Resources */,

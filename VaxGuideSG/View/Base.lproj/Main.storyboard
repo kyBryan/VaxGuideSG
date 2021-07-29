@@ -69,7 +69,7 @@
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         </variation>
                                         <connections>
-                                            <segue destination="eIC-hP-kyZ" kind="show" id="qFF-iX-eSj"/>
+                                            <segue destination="7je-2U-Oia" kind="show" id="7kt-Uc-azG"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AJq-ps-WGo">
@@ -230,6 +230,16 @@
             </objects>
             <point key="canvasLocation" x="28.985507246376812" y="73.660714285714278"/>
         </scene>
+        <!--Appointment-->
+        <scene sceneID="Kpk-Vr-rNu">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Appointment" id="7je-2U-Oia" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="PMs-M0-ewm"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p5r-cH-oLB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="604" y="479"/>
+        </scene>
         <!--Login View Controller-->
         <scene sceneID="0PW-T9-oPB">
             <objects>
@@ -334,16 +344,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jib-6h-cIa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="730" y="-685"/>
-        </scene>
-        <!--Appointment-->
-        <scene sceneID="tyN-rt-PEe">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Appointment" id="eIC-hP-kyZ" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="NRb-u0-Vvk"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="EiV-tP-Ebb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="889" y="580"/>
         </scene>
     </scenes>
     <resources>
