@@ -14,12 +14,30 @@ class ViewController: UIViewController {
     @IBOutlet weak var trailing: NSLayoutConstraint!
     
     @IBOutlet weak var homeView: UIView!
+    @IBOutlet weak var nameLabelBtn: UIButton!
+    
     
     var menuFlag = false
+    var coreDataModel = CoreDataModel()
+    var users = [Users]()
+    var id = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        let defaults = UserDefaults.standard
+        let nric = defaults.string(forKey: "nric")
+        
+        users = coreDataModel.fetchAllUsers()
+                
+        for i in 0..<users.count {
+            if users[i].nric == nric {
+                id = i
+            }
+        }
+        
+        nameLabelBtn.setTitle("\(users[id].fullname!)", for: .normal)
     }
 
     @IBAction func menuTapped(_ sender: Any) {
