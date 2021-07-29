@@ -53,6 +53,9 @@
                                         <variation key="heightClass=compact">
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         </variation>
+                                        <connections>
+                                            <action selector="menuTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VYc-QK-4ma"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jzR-6Q-GeD">
                                         <rect key="frame" x="0.0" y="132" width="205" height="22"/>
@@ -127,20 +130,42 @@
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wrf-84-ehX">
                                 <rect key="frame" x="414" y="88" width="414" height="808"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WEk-y4-xsb">
-                                        <rect key="frame" x="54" y="66" width="312" height="77"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WEk-y4-xsb">
+                                        <rect key="frame" x="5" y="50" width="818" height="77"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="77" id="HPT-Se-Jx0"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Start Your Vaccination Tour Guide"/>
                                         <connections>
                                             <segue destination="Ms5-5L-blu" kind="show" id="Qqj-pR-VLc"/>
                                         </connections>
                                     </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeimg1" translatesAutoresizingMaskIntoConstraints="NO" id="7Wg-Hm-1dN">
+                                        <rect key="frame" x="5" y="167" width="818" height="250"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="250" id="ZMD-vX-LI0"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeimg2" translatesAutoresizingMaskIntoConstraints="NO" id="VtJ-Pn-Hrk">
+                                        <rect key="frame" x="5" y="422" width="402" height="380"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="VtJ-Pn-Hrk" secondAttribute="height" multiplier="199:188" id="Oru-Jy-UdR"/>
+                                            <constraint firstAttribute="width" constant="402" id="tdw-4a-Pk1"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="WEk-y4-xsb" secondAttribute="trailing" constant="20" id="UvY-Lw-hUD"/>
-                                    <constraint firstItem="WEk-y4-xsb" firstAttribute="top" secondItem="wrf-84-ehX" secondAttribute="top" constant="20" id="XsZ-Dn-4QY"/>
-                                    <constraint firstItem="WEk-y4-xsb" firstAttribute="leading" secondItem="wrf-84-ehX" secondAttribute="leading" constant="20" id="Z1o-SK-lfd"/>
+                                    <constraint firstItem="VtJ-Pn-Hrk" firstAttribute="top" secondItem="7Wg-Hm-1dN" secondAttribute="bottom" constant="5" id="1uu-Y3-RK3"/>
+                                    <constraint firstItem="7Wg-Hm-1dN" firstAttribute="top" secondItem="WEk-y4-xsb" secondAttribute="bottom" constant="40" id="61W-FO-dvY"/>
+                                    <constraint firstAttribute="trailing" secondItem="VtJ-Pn-Hrk" secondAttribute="trailing" constant="5" id="9mb-tF-Y6p"/>
+                                    <constraint firstItem="VtJ-Pn-Hrk" firstAttribute="leading" secondItem="wrf-84-ehX" secondAttribute="leading" constant="5" id="KB2-aG-lO0"/>
+                                    <constraint firstItem="WEk-y4-xsb" firstAttribute="top" secondItem="wrf-84-ehX" secondAttribute="top" constant="50" id="Syd-YM-83W"/>
+                                    <constraint firstItem="WEk-y4-xsb" firstAttribute="leading" secondItem="wrf-84-ehX" secondAttribute="leading" constant="5" id="awR-PQ-4Z9"/>
+                                    <constraint firstAttribute="trailing" secondItem="WEk-y4-xsb" secondAttribute="trailing" constant="5" id="ekj-RO-qBW"/>
+                                    <constraint firstAttribute="trailing" secondItem="7Wg-Hm-1dN" secondAttribute="trailing" constant="5" id="lZu-g0-fhf"/>
+                                    <constraint firstItem="7Wg-Hm-1dN" firstAttribute="leading" secondItem="wrf-84-ehX" secondAttribute="leading" constant="5" id="mG7-tz-0je"/>
                                 </constraints>
                                 <variation key="heightClass=compact" insetsLayoutMarginsFromSafeArea="NO"/>
                             </view>
@@ -333,6 +358,8 @@
         <image name="doc.text" catalog="system" width="115" height="128"/>
         <image name="gearshape" catalog="system" width="128" height="121"/>
         <image name="giftcard" catalog="system" width="128" height="88"/>
+        <image name="homeimg1" width="2480" height="1754"/>
+        <image name="homeimg2" width="1600" height="1600"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="line.horizontal.3" catalog="system" width="128" height="64"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
