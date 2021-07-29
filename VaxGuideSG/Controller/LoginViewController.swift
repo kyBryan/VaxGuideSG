@@ -8,7 +8,7 @@
 import UIKit
 import CoreData
 
-class LoginViewController: UIViewController { 
+class LoginViewController: UIViewController {
     
     @IBOutlet weak var usernameLabel: UITextField!
     @IBOutlet weak var passwordLabel: UITextField!
@@ -57,18 +57,21 @@ class LoginViewController: UIViewController {
                 print(users[i].nric!)
                 print(users[i].password!)
                 
-                if usernameLabel.text! != users[i].nric! && passwordLabel.text! != users[i].password! {
+                if usernameLabel.text! == users[i].nric! && passwordLabel.text! == users[i].password! {
+                    title = "Account exist"
+                    msg = "Yey"
+                    
+                    performSegue(withIdentifier: "logintohome", sender: self)
+                    break
+                    
+                } else if usernameLabel.text! == users[i].nric && passwordLabel.text! != users[i].password {
+                    title = "Incorrect password!"
+                    msg = "The password you entered is incorrect. Please retry."
+                    
+                } else if usernameLabel.text! != users[i].nric && passwordLabel.text! != users[i].password {
                     title = "No existing account"
                     msg = "There is no such account in our system. Sign up to continue."
-                    
-                } else if usernameLabel.text! != users[i].nric || passwordLabel.text! != users[i].password {
-                    title = "Incorrect username or password"
-                    msg = "Either or both the inputs is incorrect. Please retry."
-                    
-                } else {
-                    
                 }
-                
             }
         }
         

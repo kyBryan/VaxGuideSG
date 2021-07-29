@@ -31,6 +31,8 @@ class SignUpViewController: UIViewController {
         } else {
             
             coreDataModel.addNewUser(email: emailLabel.text!, fullname: fullNameLabel.text!, nric: identityCardNoLabel.text!, password: passwordLabel.text!, phone: phoneNoLabel.text!)
+            
+            dismiss(animated: true, completion: nil)
     
         }
         
