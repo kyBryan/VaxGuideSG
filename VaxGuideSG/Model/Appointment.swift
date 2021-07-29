@@ -10,4 +10,5 @@ import Foundation
 // MARK: - Appointment
 struct Appointment: Codable {
     let nric, location, date, time: String
+    let dosage: Int
 }
